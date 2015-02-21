@@ -3,6 +3,8 @@
 \usepackage{amsmath}  
 \usepackage{amsfonts} 
 \usepackage{graphicx} 
+\usepackage{color}
+\usepackage{ulem}
 
 \begin{document}
 
@@ -36,7 +38,7 @@
 
 Krypton is one of the noble gases, its outer electron shell is completely filled, as such the energy gap between the ground energy state and the first excited state is large (Add number here). Therefore to laser cool from the ground state would require (123nm?) light which is not currently possible experimentally. To be able to trap krypton atoms they need to be in an excited state and that state needs to be metastable so that the atoms cannot decay while we are cooling and trading them. 
 
-To get the kryptons to the metastable state we used a 215nm light to drive a two-photon transition from the ground $4P^6$ $^1S_0$ state, to the $5P_{[3/2]_2}$ state. Throughout our calculations we call the ground $4P^6$ $^1S_0$ state 'state 1' and the $5P_{[3/2]_2}$ state 'state 2.' There are other states at similar energies to the states in question, but they are not important for our experiment because transitions to them are quantum mechanically forbidden. From the $5P_{[3/2]_2}$ state the atom will either decay to the ground state or it will decay to a metastable state, the $SP_{[3/2]_2}$ state. We called this metastable state 'state 3.' The last possibility is that the atom can ionize either from the the $5P_{[3/2]_2}$ state or the metastable $5S_{[3/2]_2}$ state.
+To get the kryptons to the metastable state we used a 215nm light to drive a two-photon transition from the ground $4P^6$ $^1S_0$ state, to the $5P_{[3/2]_2}$ state. Throughout our calculations we call the ground $4P^6$ $^1S_0$ state 'state 1' and the $5P_{[3/2]_2}$ state 'state 2.' There are other states at similar energies to the states in question, but they are not important for our experiment because transitions to them are quantum mechanically forbidden. From the $5P_{[3/2]_2}$ state the atom will either decay to the ground state or it will decay to a metastable state, the $SP_{[3/2]_2}$ state. We called this metastable state 'state 3.' The last possibility is that the atom can ionize either from the the $5P_{[3/2]_2}$ state or the metastable $5S_{[3/2]_2}$ state. \textcolor{blue}{I think I should probably add an image of krypton energy levels.}
 
 Atom trap trace analysis counts atoms that have been trapped so it is limited by the number of atoms in the metastable state, i.e. the number of atoms available to be trapped. To determine the efficiency of our set up, we calculated the percentage of krypton atoms that ended up in the metastable $5S_{[3/2]_2}$ state using the rate equations.
 
@@ -89,7 +91,24 @@ Solving these linearly dependent equations is possible, but the computational ti
 \end{bmatrix}
 \end{equation}
 
+The general solution to the first order differential matrix equation is \textcolor{blue}{do I need to cite this?}
 
+\begin{equation}
+\label{RateEqSol}
+N(t) = A_1e^{\lambda_1 t} v_1 + A_2e^{\lambda_2 t} v_2 + A_3e^{\lambda_3 t} v_3 + A_4e^{\lambda_4 t} v_4 
+\end{equation}
+
+where $\lambda$ is an eigenvalue of the matrix and v is an eigenvector or the matrix.  A is the amplitude determined by the initial conditions. The initial condition is that all of the atoms are in the ground state, state 1. That is
+
+\begin{equation}
+\label{InitialCond}
+N_1(0) = 1, \	\	\	\	
+N_2(0) = 0, \	\	\	\	
+N_3(0) = 0, \	\	\	\	
+N_4(0) = 0 
+\end{equation}
+
+which allows us to solve for particular solutions to the rate equations. We did all calculations and analysis in Mathematica.
 
 \section{TiSapphire Laser}
 
