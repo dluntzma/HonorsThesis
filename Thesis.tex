@@ -108,9 +108,39 @@ N_3(0) = 0, \	\	\	\
 N_4(0) = 0 
 \end{equation}
 
-which allows us to solve for particular solutions to the rate equations. We did all calculations and analysis in Mathematica.
+which allows us to obtain particular solutions to the rate equations. We did all calculations and analysis in Mathematica. \textcolor{blue}{Should I make an appendix with the Mathematica notebooks?} Once we had the solutions to the rate equations we needed to define the variables $\omega_{12}$, $\tau_{21}$, $\tau_{23}$, $R_2$ and $R_3$ which make up the eigenvectors and eigenvalues of the matrix.
 
-\section{TiSapphire Laser}
+\subsection{Constant Intensity and Velocity Approximation} 
+
+For our initial calculation we made a couple simplifying approximations. The first approximation we made was to model the beam profile as constant. The second approximation was to use a single averaged velocity rather then the Maxwell velocity distribution. We later expanded our calculations to account for the beam profile and the velocity distribution those calculations can be found in the subsequent sections. 
+
+The decay rates for state 2 ($5P_{[3/2]_2}$) to state 1 (ground state) and state 3 (metastable state) are know quantities.
+\begin{equation}
+\label{DecayRates} 
+\tau_{21} = 1.1x10^7 s, \	\	\	\	 \tau_{23} = 3.1x10^7s
+\end{equation} 
+\textcolor{blue}{I think I should cite these, but I am not sure where they came from. Does NIST have these?}
+
+The ionization rates are given by 
+\begin{equation}
+\label{IonizationRates}
+R = \sigma_{pi} \frac{I}{\hbar\omega}
+\end{equation}
+
+where $I$ is the intensity of the laser calculated from power, $I = \frac{P}{\frac{1}{2}\pi w^2}$ and $w$ is the beam waist. $\omega$ is the frequency of the light defined as $\omega = \frac{2\pi c}{\lambda}$. $\sigma_{pi}$ is the \textcolor{blue}{I have no idea what this is, I feel like you said it had something to do with atom radius??? But I might be making that up.} 
+
+The rate by which atoms are excited by two-photon transition from state 1 to state 2 is $\omega_{12}$ given by
+
+\begin{equation}
+\label{ExcitationRate}
+\omega_{12} = \sigma_0 g \frac{I^2}{(\hbar \omega)^2}
+\end{equation}
+
+$\sigma_0$ is the \textcolor{blue}{I don't know what this is.} $g$ is defined as $g = 2 \sqrt{\frac{Log(2)}{2 \pi \Delta \omega_L^2}}$ with $\Delta\omega_L$ as the \textcolor{blue}{I don't know what this is either.}
+
+
+
+\section{Ti:Sapphire Laser}
 
 
 \section{Laser Stabilization}
