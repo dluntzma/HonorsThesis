@@ -7,7 +7,7 @@
 \begin{document}
 
 
-\title{Building the Next Generation Atom Trap Trace Analysis}
+\title{}
 
 
 \author{Danika Luntz-Martin}
@@ -34,25 +34,68 @@
 
 \section{Theory}
 
-Krypton is one of the noble gases, its outer electron shell is completely filled, as such the energy gap between the ground energy state and the first excited state is large (XXXX). Therefore to laser cool from the ground state would require (123nm?) light which is not currently possible experimentally. To be able to trap krypton atoms they need to be in an excited state and that state needs to be metastable so that the atoms cannot decay while we are cooling and trading them. 
+Krypton is one of the noble gases, its outer electron shell is completely filled, as such the energy gap between the ground energy state and the first excited state is large (Add number here). Therefore to laser cool from the ground state would require (123nm?) light which is not currently possible experimentally. To be able to trap krypton atoms they need to be in an excited state and that state needs to be metastable so that the atoms cannot decay while we are cooling and trading them. 
 
-To get the kryptons to the metastable state we used a 215nm light to drive a two-photon transition from the ground state, through the ZZZZZZ state to the XXXXXX state. Throughout our calculations we call the ground state 'state 1' and the XXXXXX state 'state 2.' The ZZZZZ state is not important for our experiment; it is just a intermediate state between the ground state and the XXXXXX state. From the XXXXX state the atom will either decay to the ground state (through the ZZZZZ state) or it will decay to a metastable state, the YYYYYY state. We called this metastable state 'state 3.' The last possibility is that the atom can ionize either from the the XXXXX state or the metastable YYYYY state.
+To get the kryptons to the metastable state we used a 215nm light to drive a two-photon transition from the ground $4P^6$ $^1S_0$ state, to the $5P_{[3/2]_2}$ state. Throughout our calculations we call the ground $4P^6$ $^1S_0$ state 'state 1' and the $5P_{[3/2]_2}$ state 'state 2.' There are other states at similar energies to the states in question, but they are not important for our experiment because transitions to them are quantum mechanically forbidden. From the $5P_{[3/2]_2}$ state the atom will either decay to the ground state or it will decay to a metastable state, the $SP_{[3/2]_2}$ state. We called this metastable state 'state 3.' The last possibility is that the atom can ionize either from the the $5P_{[3/2]_2}$ state or the metastable $5S_{[3/2]_2}$ state.
 
-Atom trap trace analysis counts atoms that have been trapped so it is limited by the number of atoms in the metastable state. To determine the efficiency of our set up, we needed to calculate the percentage of krypton atoms that ended up in the 
+Atom trap trace analysis counts atoms that have been trapped so it is limited by the number of atoms in the metastable state, i.e. the number of atoms available to be trapped. To determine the efficiency of our set up, we calculated the percentage of krypton atoms that ended up in the metastable $5S_{[3/2]_2}$ state using the rate equations.
 
-\section{Methods}
+\begin{equation}
+\label{RateEq1}
+\frac{dN_1}{dt} = -\omega_{12}N_1 + \frac{1}{\tau_{21}}N_2
+\end{equation}
+
+Equation~\ref{RateEq1} gives the change in the number of atoms ($N_1$) in the ground state. $\omega_{12}$ is the rate of atoms in state 1 (the ground state) which are excited to state 2, the $5P_{[3/2]_2}$ state, via the two-photon transition. $\omega_{12}$ is negative because atoms are leaving state 1. $\frac{1}{\tau_{21}}$ is the rate of decay from state 2 back to state 1. Similarly, there are differential equations for the three other states.
+
+\begin{equation}
+\label{RateEq2}
+\frac{dN_2}{dt} = \omega_{12}N_1 -  \frac{1}{\tau_{21}}N_2 - \frac{1}{\tau_{23}}N_2 - R_2N_2
+\end{equation}
+
+\begin{equation}
+\label{RateEq3}
+\frac{dN_3}{dt} =  \frac{1}{\tau_{23}}N_2 - R_3N_3
+\end{equation}
+
+\begin{equation}
+\label{RateEq4}
+\frac{dN_4}{dt} = R_2N_2 + R_3N_3
+\end{equation}
+
+Where $\tau_{23}$ if the decay rate from state 3, the metastable state, to state 2. $R_2$ and $R_3$ are the ionization rates from states 2 and 3 respectively. $N_4$ is the number of atoms which have been ionized, just as $N_2$ and $N_3$ are the number of atoms in state 2 and state 3.
+
+Solving these linearly dependent equations is possible, but the computational time is much shorter if they are put into matrix form.
+
+\begin{equation}
+\label{RateEqMatrix}
+\begin{bmatrix}
+	\frac{dN_1}{dt} \\
+	\frac{dN_2}{dt} \\
+	\frac{dN_3}{dt} \\
+	\frac{dN_4}{dt} \\
+\end{bmatrix}
+=
+\begin{pmatrix}
+	-\omega_{12} & \frac{1}{\tau_{21}}  & 0 &  0   \\
+	\omega_{12}  & -\frac{1}{\tau_{21}}- \frac{1}{\tau_{23}}-R_2 & 0 & 0 \\
+	0  &  \frac{1}{\tau_{23}}  & - R_3 & 0 \\
+	0  &  R_2  & R_3 & 0  \\
+\end{pmatrix}
+\begin{bmatrix}
+	N_1 \\
+	N_2 \\
+	N_3 \\
+	N_4 \\
+\end{bmatrix}
+\end{equation}
 
 
-\section{Results}
 
- 
-\section{Analysis}
+\section{TiSapphire Laser}
 
 
-\section{Discussion}
+\section{Laser Stabilization}
 
-
-\section{Conclusion}
 
 
 
