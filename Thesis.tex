@@ -138,7 +138,31 @@ The rate by which atoms are excited by two-photon transition from state 1 to sta
 
 $\sigma_0$ is the \textcolor{blue}{I don't know what this is.} $g$ is defined as $g = 2 \sqrt{\frac{Log(2)}{2 \pi \Delta \omega_L^2}}$ with $\Delta\omega_L$ as the \textcolor{blue}{I don't know what this is either.}
 
+The solution to these equations is given in Figure~\ref{MetaGraph1} which shows the fraction of atoms in the metastable state as a function of the size of the laser's beam waist. The optimum number of atoms end up in the metastable state when the beam waist is close to 20 microns. When the beam waist is smaller than 20 microns most of the atoms do not have time to reach the excited state as they pass through the laser beam. When the beam waist is larger than 20 microns, atoms from the metastable state are ionized.
 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=6in]{MetaGraph1.pdf}
+\caption{The fraction of atoms in the metastable state as a function of laser's beam waist. The fraction of atoms reaching the metastable state increases sharply as the beam waist increases until 20 microns. After 20 microns the number of atoms in the metastable state decreases because the atoms are ionizing.}
+\label{MetaGraph1}
+\end{figure}
+
+Figure~\ref{AllGraph1} shows the fraction of atoms in each of the states which is helpful to see how the atoms move between states. The green line is the ground state which starts at one because the initial condition is all of the atoms in the ground state and continuously decreases as time passes. State 1 is the orange line; it quickly increases as atoms are excited through two-photon transition. The number of atoms in state 1 decrease as atoms decay either back to the ground state or to the metastable state. The number of atoms in the metastable state increases as atoms decay to it from the state 1. Atoms only leave the metastable state if they ionize. Only a small fraction of atoms are ionized, see the red line.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=6in]{AllGraph1.pdf}
+\caption{The fraction of atoms in each state plotted against time. The green line is the ground state. The orange line is the excited $5P_{[3/2]_2}$ state. Blue is the metastable $5S_{[3/2]_2}$ and red is the fraction of atoms that have ionized.}
+\label{AllGraph1}
+\end{figure}
+
+\subsection{Gaussian Beam Profile}
+
+\subsection{Maxwell Velocity Distribution}
+
+Adding the Maxwell velocity distribution presents new difficulties 
+ 
+ 
 
 \section{Ti:Sapphire Laser}
 
