@@ -127,7 +127,7 @@ The ionization rates are given by
 R = \sigma_{pi} \frac{I}{\hbar\omega}
 \end{equation}
 
-where $I$ is the intensity of the laser calculated from power, $I = \frac{P}{\frac{1}{2}\pi w^2}$ and $w$ is the beam waist. $\omega$ is the frequency of the light defined as $\omega = \frac{2\pi c}{\lambda}$. $\sigma_{pi}$ is the \textcolor{blue}{I have no idea what this is, I feel like you said it had something to do with atom radius??? But I might be making that up.} 
+where $I$ is the intensity of the laser calculated from power, $I = \frac{P}{\frac{1}{2}\pi w^2}$ and $w$ is the beam waist. We used a power value of $7.5 W$ based on \textcolor{blue}{was this value from M Squared specs?} $\omega$ is the frequency of the light defined as $\omega = \frac{2\pi c}{\lambda}$. $\sigma_{pi}$ is the \textcolor{blue}{I have no idea what this is, I feel like you said it had something to do with atom radius??? But I might be making that up.} 
 
 The rate by which atoms are excited by two-photon transition from state 1 to state 2 is $\omega_{12}$ given by
 
@@ -158,6 +158,12 @@ Figure~\ref{AllGraph1} shows the fraction of atoms in each of the states which i
 
 \subsection{Gaussian Beam Profile}
 
+To make our model more accurate we factored in the intensity profile of the laser beam. From the laser manufacturer's, M Squared, specifications we know that the Ti:Sapphire laser's intensity profile is a two-dimensional gaussian. It was conceptually simple to incorporate the intensity profile into our previous calculation in place of the constant intensity. Computationally, it was not quite as easy.
+
+We replaced our former intensity with by $I = I_0 e^{\frac{-2 x^2}{w^2}}$ where $I_0 = \frac{P}{\frac{1}{2}\pi w^2}$, the same intensity we used as a constant in our previous approximation. However, the addition of the gaussian term means that the equations no longer have analytical solutions. We solved the differential equations numerically.
+
+The resulting graph is only slightly different from our first approximation, see Figure~\ref{XXX}.
+
 \subsection{Maxwell Velocity Distribution}
 
 Adding the Maxwell velocity distribution presents new difficulties 
@@ -168,7 +174,6 @@ Adding the Maxwell velocity distribution presents new difficulties
 
 
 \section{Laser Stabilization}
-
 
 
 
