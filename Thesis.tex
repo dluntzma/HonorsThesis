@@ -36,9 +36,17 @@
 
 \section{Theory}
 
-Krypton is one of the noble gases, its outer electron shell is completely filled, as such the energy gap between the ground energy state and the first excited state is large (Add number here). Therefore to laser cool from the ground state would require (123nm?) light which is not currently possible experimentally. To be able to trap krypton atoms they need to be in an excited state and that state needs to be metastable so that the atoms cannot decay while we are cooling and trading them. 
+Krypton is one of the noble gases; its outer electron shell is completely filled therefore the energy gap between the ground energy state and the first excited state is large. Therefore to laser cool from the ground state would require \textcolor{blue}{was it 123nm?} light which is not currently possible experimentally. To be able to trap krypton atoms they need to be in an excited state and that state needs to be metastable so that the atoms cannot decay while we are cooling and trading them. 
 
-To get the kryptons to the metastable state we used a 215nm light to drive a two-photon transition from the ground $4P^6$ $^1S_0$ state, to the $5P_{[3/2]_2}$ state. Throughout our calculations we call the ground $4P^6$ $^1S_0$ state 'state 1' and the $5P_{[3/2]_2}$ state 'state 2.' There are other states at similar energies to the states in question, but they are not important for our experiment because transitions to them are quantum mechanically forbidden. From the $5P_{[3/2]_2}$ state the atom will either decay to the ground state or it will decay to a metastable state, the $SP_{[3/2]_2}$ state. We called this metastable state 'state 3.' The last possibility is that the atom can ionize either from the the $5P_{[3/2]_2}$ state or the metastable $5S_{[3/2]_2}$ state. \textcolor{blue}{I think I should probably add an image of krypton energy levels.}
+To get the kryptons to the metastable state we used a 215nm light to drive a two-photon transition from the ground $4P^6$ $^1S_0$ state, to the $5P_{[3/2]_2}$ state, see Figure~\ref{KrEnergyLevels}. Throughout our calculations we call the ground $4P^6$ $^1S_0$ state 'state 1' and the $5P_{[3/2]_2}$ state 'state 2.' There are other states at similar energies to the states in question, but they are not important for our experiment because transitions to them are quantum mechanically forbidden. From the $5P_{[3/2]_2}$ state the atom will either decay to the ground state or it will decay to a metastable state, the $5S_{[3/2]_2}$ state. We called this metastable state 'state 3.' The last possibility is that the atom can ionize either from the the $5P_{[3/2]_2}$ state or the metastable $5S_{[3/2]_2}$ state. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=6in]{KrEnergyLevels.pdf}
+\caption{The energy levels of krypton. This figure only includes energy levels that are relevant to our experiment. Atoms are excited from the $4P^6$ $^1S_0$ state using two-photons to the $5P_{[3/2]_2}$ state then they decay either back to the $4P^6$ $^1S_0$ state or to the $5S_{[3/2]_2}$ state. Atoms can be ionized from both the $5S_{[3/2]_2}$ state and the $5P_{[3/2]_2}$ state.}
+\label{KrEnergyLevels}
+\end{figure}
+
 
 Atom trap trace analysis counts atoms that have been trapped so it is limited by the number of atoms in the metastable state, i.e. the number of atoms available to be trapped. To determine the efficiency of our set up, we calculated the percentage of krypton atoms that ended up in the metastable $5S_{[3/2]_2}$ state using the rate equations.
 
@@ -91,7 +99,7 @@ Solving these linearly dependent equations is possible, but the computational ti
 \end{bmatrix}
 \end{equation}
 
-The general solution to the first order differential matrix equation is \textcolor{blue}{do I need to cite this?}
+The general solution to the first order differential matrix equation is
 
 \begin{equation}
 \label{RateEqSol}
@@ -108,7 +116,7 @@ N_3(0) = 0, \	\	\	\
 N_4(0) = 0 
 \end{equation}
 
-which allows us to obtain particular solutions to the rate equations. We did all calculations and analysis in Mathematica. \textcolor{blue}{Should I make an appendix with the Mathematica notebooks?} Once we had the solutions to the rate equations we needed to define the variables $\omega_{12}$, $\tau_{21}$, $\tau_{23}$, $R_2$ and $R_3$ which make up the eigenvectors and eigenvalues of the matrix.
+which allows us to obtain particular solutions to the rate equations. We did all calculations and analysis in Mathematica. Once we had the solutions to the rate equations we needed to define the variables $\omega_{12}$, $\tau_{21}$, $\tau_{23}$, $R_2$ and $R_3$ which make up the eigenvectors and eigenvalues of the matrix.
 
 \subsection{Constant Intensity and Velocity Approximation} 
 
@@ -119,7 +127,7 @@ The decay rates for state 2 ($5P_{[3/2]_2}$) to state 1 (ground state) and state
 \label{DecayRates} 
 \tau_{21} = 1.1x10^7 s, \	\	\	\	 \tau_{23} = 3.1x10^7s
 \end{equation} 
-\textcolor{blue}{I think I should cite these, but I am not sure where they came from. Does NIST have these?}
+\textcolor{blue}{Does NIST have these?}
 
 The ionization rates are given by 
 \begin{equation}
@@ -127,7 +135,7 @@ The ionization rates are given by
 R = \sigma_{pi} \frac{I}{\hbar\omega}
 \end{equation}
 
-where $I$ is the intensity of the laser calculated from power, $I = \frac{P}{\frac{1}{2}\pi w^2}$ and $w$ is the beam waist. We used a power value of $7.5 W$ based on \textcolor{blue}{was this value from M Squared specs?} $\omega$ is the frequency of the light defined as $\omega = \frac{2\pi c}{\lambda}$. $\sigma_{pi}$ is the \textcolor{blue}{I have no idea what this is, I feel like you said it had something to do with atom radius??? But I might be making that up.} 
+where $I$ is the intensity of the laser calculated from power, $I = \frac{P}{\frac{1}{2}\pi w^2}$ and $w$ is the beam waist. We used a power value of $7.5 W$ based on a conservative estimate from the laser specifications. $\omega$ is the frequency of the light defined as $\omega = \frac{2\pi c}{\lambda}$. $\sigma_{pi}$ is the photo-ionization cross section, the probability that a photon will be absorbed by the atom.
 
 The rate by which atoms are excited by two-photon transition from state 1 to state 2 is $\omega_{12}$ given by
 
@@ -136,7 +144,7 @@ The rate by which atoms are excited by two-photon transition from state 1 to sta
 \omega_{12} = \sigma_0 g \frac{I^2}{(\hbar \omega)^2}
 \end{equation}
 
-$\sigma_0$ is the \textcolor{blue}{I don't know what this is.} $g$ is defined as $g = 2 \sqrt{\frac{Log(2)}{2 \pi \Delta \omega_L^2}}$ with $\Delta\omega_L$ as the \textcolor{blue}{I don't know what this is either.}
+$\sigma_0$ is the two-photon cross section, the probability that two photons will be absorbed. $g$ is defined as $g = 2 \sqrt{\frac{Log(2)}{2 \pi \Delta \omega_L^2}}$ with $\Delta\omega_L$ as the \textcolor{blue}{I don't know what this is either.}
 
 The solution to these equations is given in Figure~\ref{MetaGraph1} which shows the fraction of atoms in the metastable state as a function of the size of the laser's beam waist. The optimum number of atoms end up in the metastable state when the beam waist is close to 20 microns. When the beam waist is smaller than 20 microns most of the atoms do not have time to reach the excited state as they pass through the laser beam. When the beam waist is larger than 20 microns, atoms from the metastable state are ionized.
 
@@ -162,7 +170,7 @@ To make our model more accurate we factored in the intensity profile of the lase
 
 We replaced our former intensity with by $I = I_0 e^{\frac{-2 x^2}{w^2}}$ where $I_0 = \frac{P}{\frac{1}{2}\pi w^2}$, the same intensity we used as a constant in our previous approximation. However, the addition of the gaussian term means that the equations no longer have analytical solutions. We solved the differential equations numerically.
 
-The resulting graph is only slightly different from our first approximation, see Figure~\ref{XXX}.
+The resulting graph is only slightly different from our first approximation, see Figure~\ref{XXX}. Adding the intensity profile 
 
 \subsection{Maxwell Velocity Distribution}
 
@@ -175,11 +183,14 @@ Adding the Maxwell velocity distribution presents new difficulties
 
 \section{Laser Stabilization}
 
+\section{Appendix}
+
+\textcolor{magenta}{Put Mathematica notebooks here!}
 
 
-\begin{thebibliography}{0}
+\begin{thebibliography}{1}
 
-
+\bibitem{NIST}A. Kramida, Yu. Ralchenko, J. Reader, J. and NIST ASD Team (2013). NIST Atomic Spectra Database (version 5.1), [Online]. Available: \url{<http://physics.nist.gov/asd>} [Wednesday, 15-Jan-201422:06:55 EST]. National Institute of Standards and Technology, Gaithersburg, MD.
 
 \end{thebibliography}
 
