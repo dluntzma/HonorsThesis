@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  25 FEB 2015 21:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  8 MAR 2015 22:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -331,65 +331,62 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <MetaGraph1.pdf, id=52, 361.35pt x 269.005pt>
 File: MetaGraph1.pdf Graphic file (type pdf)
  <use MetaGraph1.pdf>
-Package pdftex.def Info: MetaGraph1.pdf used on input line 153.
+Package pdftex.def Info: MetaGraph1.pdf used on input line 160.
 (pdftex.def)             Requested size: 433.62pt x 322.80847pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<AllGraph1.pdf, id=53, 361.35pt x 237.88875pt>
-File: AllGraph1.pdf Graphic file (type pdf)
- <use AllGraph1.pdf>
-Package pdftex.def Info: AllGraph1.pdf used on input line 162.
+<TimeGraph.pdf, id=53, 361.35pt x 237.88875pt>
+File: TimeGraph.pdf Graphic file (type pdf)
+ <use TimeGraph.pdf>
+Package pdftex.def Info: TimeGraph.pdf used on input line 169.
 (pdftex.def)             Requested size: 433.62pt x 285.46867pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5]
+[5] [6 <./MetaGraph1.pdf>] <AllGraph.pdf, id=77, 361.35pt x 233.87375pt>
+File: AllGraph.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `XXX' on page 6 undefined on input line 173.
+<use AllGraph.pdf>
+Package pdftex.def Info: AllGraph.pdf used on input line 184.
+(pdftex.def)             Requested size: 433.62pt x 280.65063pt.
 
-[6 <./MetaGraph1.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7 <./TimeGraph.pdf>] [8 <./AllGraph.pdf>]
 No file Thesis.bbl.
-[7 <./AllGraph1.pdf>] (./Thesis.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
-
-
- ) 
+[9] (./Thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 4308 strings out of 493117
- 57360 string characters out of 6135433
- 139255 words of memory out of 5000000
- 7711 multiletter control sequences out of 15000+600000
- 12319 words of font info for 48 fonts, out of 8000000 for 9000
+ 4317 strings out of 493117
+ 57501 string characters out of 6135433
+ 139299 words of memory out of 5000000
+ 7719 multiletter control sequences out of 15000+600000
+ 12012 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,8n,30p,842b,308s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Thesis.pdf (7 pages, 374376 bytes).
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6
+.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
+b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Thesis.pdf (9 pages, 435421 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
+ 166 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

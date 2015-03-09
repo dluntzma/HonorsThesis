@@ -135,7 +135,7 @@ The ionization rates are given by
 R = \sigma_{pi} \frac{I}{\hbar\omega}
 \end{equation}
 
-where $I$ is the intensity of the laser calculated from power, $I = \frac{P}{\frac{1}{2}\pi w^2}$ and $w$ is the beam waist. We used a power value of $7.5 W$ based on a conservative estimate from the laser specifications. $\omega$ is the frequency of the light defined as $\omega = \frac{2\pi c}{\lambda}$. $\sigma_{pi}$ is the photo-ionization cross section, the probability that a photon will be absorbed by the atom.
+where $I$ is the intensity of the laser calculated from power, $I = \frac{P}{\frac{1}{2}\pi w^2}$ and $w$ is the beam waist. We used a power value of $7.5 W$ based on a conservative estimate from the laser specifications. $\omega$ is the frequency of the light defined as $\omega = \frac{2\pi c}{\lambda}$. $\sigma_{pi}$ is the photo-ionization cross section, the probability that a photon will be absorbed by the atom. $\sigma_{pi2} = .5$ Mbarn for the $5P_{[3/2]_2}$ state and $\sigma_{pi2} = .25$ Mbarn for the $5S_{[3/2]_2}$ state.~\cite{Cannon}
 
 The rate by which atoms are excited by two-photon transition from state 1 to state 2 is $\omega_{12}$ given by
 
@@ -144,7 +144,14 @@ The rate by which atoms are excited by two-photon transition from state 1 to sta
 \omega_{12} = \sigma_0 g \frac{I^2}{(\hbar \omega)^2}
 \end{equation}
 
-$\sigma_0$ is the two-photon cross section, the probability that two photons will be absorbed. $g$ is defined as $g = 2 \sqrt{\frac{Log(2)}{2 \pi \Delta \omega_L^2}}$ with $\Delta\omega_L$ as the \textcolor{blue}{I don't know what this is either.}
+$\sigma_0$ is the two-photon cross section, the probability that two photons will be absorbed, which is $4.4x10^{-35} cm^{-4}$.~\cite{NIST} $g$ is the on resonance line shape factor, defined as 
+
+\begin{equation}
+\label{LineShapeFactor}
+g = 2 \sqrt{\frac{Log(2)}{2 \pi (\Delta \omega_L^2 + \Delta \omega_D^2)}}
+\end{equation}
+
+with $\Delta\omega_L$ as the line width of the laser. $\Delta \omega_D$ is Doppler line width for the two-photon transition, which is zero in our case because the krypton atoms are moving perpendicular to the laser.
 
 The solution to these equations is given in Figure~\ref{MetaGraph1} which shows the fraction of atoms in the metastable state as a function of the size of the laser's beam waist. The optimum number of atoms end up in the metastable state when the beam waist is close to 20 microns. When the beam waist is smaller than 20 microns most of the atoms do not have time to reach the excited state as they pass through the laser beam. When the beam waist is larger than 20 microns, atoms from the metastable state are ionized.
 
@@ -155,13 +162,13 @@ The solution to these equations is given in Figure~\ref{MetaGraph1} which shows 
 \label{MetaGraph1}
 \end{figure}
 
-Figure~\ref{AllGraph1} shows the fraction of atoms in each of the states which is helpful to see how the atoms move between states. The green line is the ground state which starts at one because the initial condition is all of the atoms in the ground state and continuously decreases as time passes. State 1 is the orange line; it quickly increases as atoms are excited through two-photon transition. The number of atoms in state 1 decrease as atoms decay either back to the ground state or to the metastable state. The number of atoms in the metastable state increases as atoms decay to it from the state 1. Atoms only leave the metastable state if they ionize. Only a small fraction of atoms are ionized, see the red line.
+Figure~\ref{TimeGraph} shows the fraction of atoms in each of the states which is helpful to see how the atoms move between states. The green line is the ground state which starts at one because the initial condition is all of the atoms in the ground state and continuously decreases as time passes. State 1 is the orange line; it quickly increases as atoms are excited through two-photon transition. The number of atoms in state 1 decrease as atoms decay either back to the ground state or to the metastable state. The number of atoms in the metastable state increases as atoms decay to it from the state 1. Atoms only leave the metastable state if they ionize. Only a small fraction of atoms are ionized, see the red line.
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=6in]{AllGraph1.pdf}
+\includegraphics[width=6in]{TimeGraph.pdf}
 \caption{The fraction of atoms in each state plotted against time. The green line is the ground state. The orange line is the excited $5P_{[3/2]_2}$ state. Blue is the metastable $5S_{[3/2]_2}$ and red is the fraction of atoms that have ionized.}
-\label{AllGraph1}
+\label{TimeGraph}
 \end{figure}
 
 \subsection{Gaussian Beam Profile}
@@ -170,11 +177,24 @@ To make our model more accurate we factored in the intensity profile of the lase
 
 We replaced our former intensity with by $I = I_0 e^{\frac{-2 x^2}{w^2}}$ where $I_0 = \frac{P}{\frac{1}{2}\pi w^2}$, the same intensity we used as a constant in our previous approximation. However, the addition of the gaussian term means that the equations no longer have analytical solutions. We solved the differential equations numerically.
 
-The resulting graph is only slightly different from our first approximation, see Figure~\ref{XXX}. Adding the intensity profile 
+The resulting graph is only slightly different from our first approximation, see Figure~\ref{AllGraph}. Adding the intensity profile does not change the shape of the peak, but it does make the peak lower and narrower. While the differences are noticeable the location of the peak is not significantly changed and fraction of atoms reaching the metastable state is still high having been decreased by approximately five percent.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=6in]{AllGraph.pdf}
+\caption{The blue line represents the calculation assuming root-mean-square velocity and a constant intensity. The green line represents the calculation assuming the root-mean-square velocity and a gaussian intensity profile. Finally, the red line is the calculation using both the gaussian intensity profile and the Maxwell velocity distribution. The root-mean-square velocity is a good approximation the green and red lines are very close. The constant intensity is not as good an approximation for the more accurate gaussian intensity profile, note the differences between blue line and the green line. However, even through the gaussian intensity gives a narrower, lower peak the peak intensities are at similar values of beam waist.}
+\label{AllGraph}
+\end{figure}
+
 
 \subsection{Maxwell Velocity Distribution}
 
-Adding the Maxwell velocity distribution presents new difficulties 
+Adding the Maxwell velocity distribution presents new difficulties. To account for the range of velocities we first calculated the fraction of atoms in each of a series of intervals. Then we calculated the fraction of atoms from each interval, that is at each different velocity, that reach the metastable state. We then multiplied the fraction of atoms that reach the metastable state from a velocity interval by the fraction of atoms in that velocity interval. Then we added together the resulting fraction from each interval to obtain the total fraction of atoms that end up in the metastable state. See Figure~\ref{AllGraph} for a comparison of the fraction of atoms reaching the metastable state from each calculation.
+
+Modeling the velocity of the atoms as the root-mean-square velocity is a very good approximation. The differences between using the root-mean-square velocity as a single average value and using the Maxwell velocity distribution were quite small. See the similarity between the green and red lines in Figure~\ref{AllGraph}.
+
+The fraction of atoms reaching the metastable state is constant through time. The number of atoms that are in the metastable state at a specific time does change, look back to Figure~\ref{TimeGraph}. The number of atoms in the metastable state increases through time before plateauing. However the total fraction of atoms reaching the metastable is the fraction of atoms that are currently there plus the fraction of atoms in the excited, second state that will decay into the metastable state. The sum of these two numbers remains constant through time which is why our total calculation is stable through time.
+ 
  
  
 
@@ -188,9 +208,11 @@ Adding the Maxwell velocity distribution presents new difficulties
 \textcolor{magenta}{Put Mathematica notebooks here!}
 
 
-\begin{thebibliography}{1}
+\begin{thebibliography}{2}
 
-\bibitem{NIST}A. Kramida, Yu. Ralchenko, J. Reader, J. and NIST ASD Team (2013). NIST Atomic Spectra Database (version 5.1), [Online]. Available: \url{<http://physics.nist.gov/asd>} [Wednesday, 15-Jan-201422:06:55 EST]. National Institute of Standards and Technology, Gaithersburg, MD.
+\bibitem{NIST} A. Kramida, Yu. Ralchenko, J. Reader, J. and NIST ASD Team (2013). NIST Atomic Spectra Database (version 5.1), [Online]. Available: \url{<http://physics.nist.gov/asd>} [Wednesday, 15-Jan-201422:06:55 EST]. National Institute of Standards and Technology, Gaithersburg, MD.
+
+\bibitem{Cannon} B. D. Cannon, ``Model calculations of continuous-wave laser ionization of krypton,'' PNNL-12253 (1999)
 
 \end{thebibliography}
 
