@@ -36,7 +36,7 @@
 
 \section{Theory}
 
-Krypton is one of the noble gases; its outer electron shell is completely filled therefore the energy gap between the ground energy state and the first excited state is large. Therefore to laser cool from the ground state would require \textcolor{blue}{was it 123nm?} light which is not currently possible experimentally. To be able to trap krypton atoms they need to be in an excited state and that state needs to be metastable so that the atoms cannot decay while we are cooling and trading them. 
+Krypton is one of the noble gases; its outer electron shell is completely filled therefore the energy gap between the ground energy state and the first excited state is large. Therefore to laser cool from the ground state would require 123.5nm light which is not currently experimentally possible. To be able to trap krypton atoms they need to be in an excited state and that state needs to be metastable so that the atoms cannot decay while we are cooling and trapping them. Krypton has a metastable state that is 760 nm below the first accessible excited state from which it is possible to cool and trap.
 
 To get the kryptons to the metastable state we used a 215nm light to drive a two-photon transition from the ground $4P^6$ $^1S_0$ state, to the $5P_{[3/2]_2}$ state, see Figure~\ref{KrEnergyLevels}. Throughout our calculations we call the ground $4P^6$ $^1S_0$ state 'state 1' and the $5P_{[3/2]_2}$ state 'state 2.' There are other states at similar energies to the states in question, but they are not important for our experiment because transitions to them are quantum mechanically forbidden. From the $5P_{[3/2]_2}$ state the atom will either decay to the ground state or it will decay to a metastable state, the $5S_{[3/2]_2}$ state. We called this metastable state 'state 3.' The last possibility is that the atom can ionize either from the the $5P_{[3/2]_2}$ state or the metastable $5S_{[3/2]_2}$ state. 
 
@@ -55,7 +55,7 @@ Atom trap trace analysis counts atoms that have been trapped so it is limited by
 \frac{dN_1}{dt} = -\omega_{12}N_1 + \frac{1}{\tau_{21}}N_2
 \end{equation}
 
-Equation~\ref{RateEq1} gives the change in the number of atoms ($N_1$) in the ground state. $\omega_{12}$ is the rate of atoms in state 1 (the ground state) which are excited to state 2, the $5P_{[3/2]_2}$ state, via the two-photon transition. $\omega_{12}$ is negative because atoms are leaving state 1. $\frac{1}{\tau_{21}}$ is the rate of decay from state 2 back to state 1. Similarly, there are differential equations for the three other states.
+Equation~\ref{RateEq1} gives the rate of change in the number of atoms ($N_1$) in the ground state. $\omega_{12}$ is the rate by which atoms in state 1 (the ground state) which are excited to state 2, the $5P_{[3/2]_2}$ state, via the two-photon transition. $\omega_{12}$ is negative because atoms are leaving state 1. $\frac{1}{\tau_{21}}$ is the rate of decay from state 2 back to state 1. Similarly, there are differential equations for the three other states.
 
 \begin{equation}
 \label{RateEq2}
@@ -72,7 +72,7 @@ Equation~\ref{RateEq1} gives the change in the number of atoms ($N_1$) in the gr
 \frac{dN_4}{dt} = R_2N_2 + R_3N_3
 \end{equation}
 
-Where $\tau_{23}$ if the decay rate from state 3, the metastable state, to state 2. $R_2$ and $R_3$ are the ionization rates from states 2 and 3 respectively. $N_4$ is the number of atoms which have been ionized, just as $N_2$ and $N_3$ are the number of atoms in state 2 and state 3.
+Where $\tau_{23}$ is the decay rate from state 3, the metastable state, to state 2. $R_2$ and $R_3$ are the ionization rates from states 2 and 3 respectively. $N_4$ is the number of atoms which have been ionized, just as $N_2$ and $N_3$ are the number of atoms in state 2 and state 3.
 
 Solving these linearly dependent equations is possible, but the computational time is much shorter if they are put into matrix form.
 
@@ -106,7 +106,7 @@ The general solution to the first order differential matrix equation is
 N(t) = A_1e^{\lambda_1 t} v_1 + A_2e^{\lambda_2 t} v_2 + A_3e^{\lambda_3 t} v_3 + A_4e^{\lambda_4 t} v_4 
 \end{equation}
 
-where $\lambda$ is an eigenvalue of the matrix and v is an eigenvector or the matrix.  A is the amplitude determined by the initial conditions. The initial condition is that all of the atoms are in the ground state, state 1. That is
+where $\lambda$ is an eigenvalue of the matrix and $v$ is an eigenvector of the matrix.  A is the amplitude determined by the initial conditions. The initial condition is that all of the atoms are in the ground state, state 1. That is
 
 \begin{equation}
 \label{InitialCond}
@@ -127,7 +127,7 @@ The decay rates for state 2 ($5P_{[3/2]_2}$) to state 1 (ground state) and state
 \label{DecayRates} 
 \tau_{21} = 1.1x10^7 s, \	\	\	\	 \tau_{23} = 3.1x10^7s
 \end{equation} 
-\textcolor{blue}{Does NIST have these?}
+\textcolor{blue}{Does NIST have these? I didn't see them cited in the MRI proposal.}
 
 The ionization rates are given by 
 \begin{equation}
@@ -177,12 +177,12 @@ To make our model more accurate we factored in the intensity profile of the lase
 
 We replaced our former intensity with by $I = I_0 e^{\frac{-2 x^2}{w^2}}$ where $I_0 = \frac{P}{\frac{1}{2}\pi w^2}$, the same intensity we used as a constant in our previous approximation. However, the addition of the gaussian term means that the equations no longer have analytical solutions. We solved the differential equations numerically.
 
-The resulting graph is only slightly different from our first approximation, see Figure~\ref{AllGraph}. Adding the intensity profile does not change the shape of the peak, but it does make the peak lower and narrower. While the differences are noticeable the location of the peak is not significantly changed and fraction of atoms reaching the metastable state is still high having been decreased by approximately five percent.
+The resulting graph is noticeably different from our first approximation, see Figure~\ref{AllGraph}. Adding the intensity profile does not change the shape of the peak, but it does make the peak lower and narrower. The location of the peak is now around 15 micrometers, rather than the 20 micrometers from the constant intensity approximation.  The fraction of atoms reaching the metastable state is still quite high having been decreased by just over five percent from roughly .9 to .85.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=6in]{AllGraph.pdf}
-\caption{The blue line represents the calculation assuming root-mean-square velocity and a constant intensity. The green line represents the calculation assuming the root-mean-square velocity and a gaussian intensity profile. Finally, the red line is the calculation using both the gaussian intensity profile and the Maxwell velocity distribution. The root-mean-square velocity is a good approximation the green and red lines are very close. The constant intensity is not as good an approximation for the more accurate gaussian intensity profile, note the differences between blue line and the green line. However, even through the gaussian intensity gives a narrower, lower peak the peak intensities are at similar values of beam waist.}
+\caption{The blue line represents the calculation assuming root-mean-square velocity and a constant intensity. The green line represents the calculation assuming the root-mean-square velocity and a gaussian intensity profile. Finally, the red line is the calculation using both the gaussian intensity profile and the Maxwell velocity distribution. The root-mean-square velocity is a good approximation the green and red lines are very close. The constant intensity is not as good an approximation for the more accurate gaussian intensity profile, note the differences between blue line and the green line.}
 \label{AllGraph}
 \end{figure}
 
@@ -194,11 +194,11 @@ Adding the Maxwell velocity distribution presents new difficulties. To account f
 Modeling the velocity of the atoms as the root-mean-square velocity is a very good approximation. The differences between using the root-mean-square velocity as a single average value and using the Maxwell velocity distribution were quite small. See the similarity between the green and red lines in Figure~\ref{AllGraph}.
 
 The fraction of atoms reaching the metastable state is constant through time. The number of atoms that are in the metastable state at a specific time does change, look back to Figure~\ref{TimeGraph}. The number of atoms in the metastable state increases through time before plateauing. However the total fraction of atoms reaching the metastable is the fraction of atoms that are currently there plus the fraction of atoms in the excited, second state that will decay into the metastable state. The sum of these two numbers remains constant through time which is why our total calculation is stable through time.
- 
- 
+
  
 
 \section{Ti:Sapphire Laser}
+
 
 
 \section{Laser Stabilization}
