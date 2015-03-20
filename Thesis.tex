@@ -203,8 +203,16 @@ A titanium-sapphire (Ti-Sapphire) laser uses titanium doped sapphire crystals, h
 
 The first step to operating the laser was to turn on the coolers which cooled the sapphire crystals and the pump laser and then to turn on the pump laser and allow it to warm up and stabilize. The pump laser takes around thirty minutes to warm up, before it is warm it will not generate any light from the Ti-Sapphire laser. It is preferable to allow the pump laser longer to fully stabilize because any drift in the pump laser will cause the Ti-Sapphire deviate from optimum and likely lose lock.
 
-Once the pump laser is warm and stable the light into the Ti-Sapphire laser must be optimized. The the output from the pump laser passes first through a beam splitter, then through a set of mirrors which can be used to align the beam in all three axis directions. The power to the Ti-Sapphire laser can be measured by using the beam splitter after the Ti-Sapphire laser and reference cavity, again see Figure~\ref{LaserSetup}. 
+Once the pump laser is warm and stable, the light into the Ti-Sapphire laser must be optimized. The the output from the pump laser passes first through a beam splitter, then through a set of mirrors which can be used to align the beam in all three axis directions. The power to the Ti-Sapphire laser can be measured by using the beam splitter after the Ti-Sapphire laser and reference cavity, again see Figure~\ref{LaserSetup} and a power meter. The alignment in the $z$ direction, the direction of propagation, should not be adjusted, but the horizontal and vertical directions, $x$ and $y$, should both be adjusted to maximize the output power of the Ti-Sapphire laser. 
 
+After optimizing the pump laser into the Ti-Sapphire laser the output voltages can be examined on an oscilloscope and used for diagnostic purposes. The exact setup of the Ti-Sapphire laser is proprietary, however \textcolor{blue}{add basics of TiS here.} The Ti-Sapphire laser from M Squared is controlled from a laptop using the provided software. The desired wavelength is selected on the laptop. After selecting the wavelength, the first step is lock the etalon. The etalon is locked at a point where its error signal crosses zero. The etalon error signal can be seen by selecting 'Etalon Error' from the dropdown menu for one of the monitors and scanning the resonator cavity continuously. The etalon error signal can be seen on the oscilloscope; if it is not symmetric around zero, the pump laser may need to be re-optimized into the Ti-Sapphire laser. A typical signal for the etalon error can be seen in Figure~\ref{EtalonError}. The etalon is then locked by clicking 'Apply Lock' on the computer. The locked signal should be a zero and show only noise. The signal to noise ratio for the etalon is 13.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=6in]{EtalonError.pdf}
+\caption{The etalon error signal as seen on the oscilloscope both before, maroon, and after, orange, the etalon has been locked. The signal to noise ratio is 13.}
+\label{EtalonError}
+\end{figure}
 
 
 \section{Laser Stabilization}
