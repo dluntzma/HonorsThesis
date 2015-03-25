@@ -49,13 +49,13 @@ Submitted to the Department of Physics \\
 \pagenumbering{arabic}
 
 \section{Introduction} 
-*This sentence should be somewhere in your introduction*  This senior thesis is the first year of a three year project designed to optically produce metastable krypton atoms for purposes of Atom Trap Trace Analysis.
+This senior thesis is the first year of a three year project designed to optically produce metastable krypton atoms for purposes of Atom Trap Trace Analysis.
 
 \section{Theory}
 
-Krypton is one of the noble gases; its outer electron shell is completely filled therefore the energy gap between the ground energy state and the first excited state is large. Therefore to laser cool from the ground state would require 123.5nm light which is not currently experimentally possible. To be able to laser cool and trap krypton atoms they need to be in an excited state and that state needs to be metastable so that the atoms cannot decay while we are cooling and trapping them. Krypton has a metastable state that is $~80,000 cm^{-1}$ ($~125 nm$) above the ground state.  This metastable state, which is actually the lowest energy excited state, is doubly forbidden thus requiring three photons to transfer the atom from the ground state to the metastable state.   In order to optically create metastable krypton atoms, we choose to excite the atoms into a higher energy excited state using a two-photon transition at 215nm.  Once in this highly excited state, the atom can emit a photon (the third photon) and decay into the metastable state. 
+Krypton is one of the noble gases; its outer electron shell is completely filled therefore the energy gap between the ground energy state and the first excited state is large. Therefore to laser cool from the ground state would require $123.5 nm$ light which is not currently experimentally possible. To be able to laser cool and trap krypton atoms they need to be in an excited state and that state needs to be metastable so that the atoms cannot decay while they are cooling and trapping them. Krypton has a metastable state that is $~80,000 cm^{-1}$ \textcolor{blue}{what is this?} $(~125 nm)$ above the ground state.  This metastable state, which is the lowest energy excited state, is doubly forbidden thus requiring three photons to transfer the atom from the ground state to the metastable state. \textcolor{blue}{explain?} In order to optically create metastable krypton atoms, we choose to excite the atoms into a higher energy excited state using a two-photon transition at $215 nm$.  Once in this highly excited state, the atom can emit a photon (the third photon) and decay into the metastable state. 
 
-To get the kryptons to the metastable state we used a 215nm light to drive a two-photon transition from the ground $4p^6$ $^1S_0$ state, to the $5p_{[3/2]_2}$ state, see Figure~\ref{KrEnergyLevels}. Throughout our calculations we call the ground $4p^6$ $^1S_0$ state 'state 1' and the $5p_{[3/2]_2}$ state 'state 2.' There are other states at similar energies to the states in question, but they are not important for our experiment because the transitions are not resonant with our laser light, making it improbable for the atom to transfer to those states. From the $5p_{[3/2]_2}$ state the atom will either decay to an intermediate state and then ground state or it will decay to a metastable state, the $5s_{[3/2]_2}$ state. We called this metastable state 'state 3.' The last possibility is that the atom can ionize either from the the $5p_{[3/2]_2}$ state or the metastable $5s_{[3/2]_2}$ state. 
+To get the kryptons to the metastable state we used a $215 nm$ light to drive a two-photon transition from the ground $4p^6$ $^1S_0$ state, to the $5p_{[3/2]_2}$ state, see Figure~\ref{KrEnergyLevels}. Throughout our calculations we call the ground $4p^6$ $^1S_0$ state 'state 1' and the $5p_{[3/2]_2}$ state 'state 2.' There are other states at similar energies to the states in question, but they are not important for our experiment because the transitions are not resonant with our laser light, making it improbable for the atom to transfer to those states. From the $5p_{[3/2]_2}$ state the atom will either decay to an intermediate state and then ground state or it will decay to a metastable state, the $5s_{[3/2]_2}$ state. We called this metastable state 'state 3.' The last possibility is that the atom can ionize either from the the $5p_{[3/2]_2}$ state or the metastable $5s_{[3/2]_2}$ state. 
 
 \begin{figure}[h!]
 \centering
@@ -71,7 +71,7 @@ Due to the isotope selectivity of laser cooling and trapping, Atom Trap Trace An
 \frac{dN_1}{dt} = -\omega_{12}N_1 + \frac{1}{\tau_{21}}N_2
 \end{equation}
 
-Equation~\ref{RateEq1} gives the rate of change in the number of atoms ($N_1$) in the ground state. $\omega_{12}$ is the rate by which atoms in state 1 (the ground state) which are excited to state 2, the $5P_{[3/2]_2}$ state, via the two-photon transition. The minus sign in front of $\omega_{12}$ indicates the atoms are leaving state 1. $\frac{1}{\tau_{21}}$ is the rate of decay from state 2 back to state 1. Similarly, there are differential equations for the three other states.
+Equation~\ref{RateEq1} gives the rate of change in the number of atoms ($N_1$) in the ground state. $\omega_{12}$ is the rate by which atoms in state 1 (the ground state) are excited to state 2, the $5P_{[3/2]_2}$ state, via the two-photon transition. The minus sign in front of $\omega_{12}$ indicates the atoms are leaving state 1. $\frac{1}{\tau_{21}}$ is the rate of decay from state 2 back to state 1. Similarly, there are differential equations for the three other states.
 
 \begin{equation}
 \label{RateEq2}
@@ -88,7 +88,7 @@ Equation~\ref{RateEq1} gives the rate of change in the number of atoms ($N_1$) i
 \frac{dN_4}{dt} = R_2N_2 + R_3N_3
 \end{equation}
 
-Where $\tau_{23}$ is the decay rate from state 2 to state 3, the metastable state. $R_2$ and $R_3$ are the ionization rates from states 2 and 3 respectively. $N_4$ is the number of atoms which have been ionized, just as $N_2$ and $N_3$ are the number of atoms in state 2 and state 3.
+Where $\tau_{23}$ is the decay rate from state 2 to state 3, the metastable state. $\tau_{23}$ is the decay rate from state 2 to state 1, through an intermediary state. $R_2$ and $R_3$ are the ionization rates from states 2 and 3 respectively. $N_4$ is the number of atoms which have been ionized, just as $N_2$ and $N_3$ are the number of atoms in state 2 and state 3.
 
 Solving these linearly dependent equations is possible, but the computational time is much shorter if they are put into matrix form.
 
@@ -116,14 +116,12 @@ Solving these linearly dependent equations is possible, but the computational ti
 \end{equation}
 
 The general solution to the first order differential matrix equation is
-
 \begin{equation}
 \label{RateEqSol}
 N(t) = A_1e^{\lambda_1 t} v_1 + A_2e^{\lambda_2 t} v_2 + A_3e^{\lambda_3 t} v_3 + A_4e^{\lambda_4 t} v_4 
 \end{equation}
 
-where $\lambda$ is an eigenvalue of the matrix and $v$ is an eigenvector of the matrix.  A is the amplitude determined by the initial conditions. The initial condition is that all of the atoms are in the ground state, state 1. That is
-
+where $\lambda$ is an eigenvalue of the matrix and $v$ is an eigenvector of the matrix. $A$ is the amplitude determined by the initial condition. The initial condition is that all of the atoms are in the ground state, state 1. That is
 \begin{equation}
 \label{InitialCond}
 N_1(0) = 1, \	\	\	\	
@@ -136,14 +134,13 @@ which allows us to obtain particular solutions to the rate equations. We did all
 
 \subsection{Constant Intensity and Velocity Approximation} 
 
-For our initial calculation we made a couple simplifying approximations. The first approximation we made was to model the intensity of the laser beam profile a step function.  Although the actual laser beam has a gaussian profile, this approximation allows for an exact solution to the above equations.  The height of the step function was constant and set equal to the maximum of the gaussian profile intensity. The width was set to twice the laser waist (also known as the laser radius) of the gaussian laser beam profile.  The second approximation was to assume all of the atoms in the collimated atomic beam were traveling with the root-mean-squared velocity of atomic beams' Maxwell velocity distribution.  The two approximations are standard in the community for evaluating the rate equations.  We later expanded our calculations to account for the gaussian beam profile and the velocity distribution; those calculations can be found in the subsequent sections. 
+For our initial calculation we made a couple simplifying approximations. The first approximation we made was to model the intensity of the laser beam profile a step function.  Although the actual laser beam has a gaussian profile, this approximation allows for an exact solution to the above equations.  The height of the step function was constant and set equal to the maximum of the gaussian profile intensity. The width was set to twice the laser waist (also known as the laser radius) of the gaussian laser beam profile.  The second approximation was to assume all of the atoms in the collimated atomic beam were traveling with the root-mean-squared velocity of atomic beam's Maxwell velocity distribution.  The two approximations are standard in the community for evaluating the rate equations.  We later expanded our calculations to account for the gaussian beam profile and the velocity distribution; those calculations can be found in the subsequent sections. 
 
-The decay rates for state 2 ($5P_{[3/2]_2}$) to state 1 (ground state) and state 3 (metastable state) are know quantities.
+The decay rates for state 2 ($5P_{[3/2]_2}$) to state 1 (ground state) and state 3 (metastable state) are know quantities.~\cite{KrTransitions}
 \begin{equation}
 \label{DecayRates} 
 \tau_{21} = 1.1x10^7 s, \	\	\	\	 \tau_{23} = 3.1x10^7s
 \end{equation} 
-\textcolor{blue}{Does NIST have these? I didn't see them cited in the MRI proposal. Yes, here is the citation: Transition probabilities for Kr I lines from wall-stabilized arc measurements, W. E. Ernst and E. Schulz-Gulde, Physica B+C 93, 136–144 (1978)}
 
 The ionization rates are given by 
 \begin{equation}
@@ -151,16 +148,15 @@ The ionization rates are given by
 R = \sigma_{pi} \frac{I}{\hbar\omega}
 \end{equation}
 
-where $I$ is the intensity of the laser calculated from power, $I = \frac{P}{\frac{1}{2}\pi w^2}$ and $w$ is the beam waist. We used a power value of $7.5 W$ based on a conservative estimate from the laser specifications. $\omega$ is the angular frequency of the light defined as $\omega = \frac{2\pi c}{\lambda}$. $\sigma_{pi}$ is the photo-ionization cross section, the probability that a photon will be absorbed by the atom. $\sigma_{pi2} = .5$ Mbarn for the $5p_{[3/2]_2}$ state and $\sigma_{pi2} = .25$ Mbarn for the $5s_{[3/2]_2}$ state.~\cite{Cannon}
+where $I$ is the intensity of the laser calculated from power, $I = \frac{P}{\frac{1}{2}\pi w^2}$ and $w$ is the beam waist. We used a power value of $7.5 W$ based on a conservative estimate from the laser specifications. $\omega$ is the angular frequency of the light defined as $\omega = \frac{2\pi c}{\lambda}$. $\sigma_{pi}$ is the photo-ionization cross section, the probability that a photon will be absorbed by the atom. $\sigma_{pi2} = .5$ Mbarn for the $5p_{[3/2]_2}$ state and $\sigma_{pi2} = .25$ Mbarn for the $5s_{[3/2]_2}$ state.~\cite{Cannon} \textcolor{blue}{do I need to know more than that barn is a unit?}
 
 The rate by which atoms are excited by two-photon transition from state 1 to state 2 is $\omega_{12}$ given by
-
 \begin{equation}
 \label{ExcitationRate}
-\omega_{12} = \sigma_0 g \frac{I^2}{(\hbar \omega)^2}
+\omega_{12} = \sigma_0\ g\ \frac{I^2}{(\hbar \omega)^2}
 \end{equation}
 
-$\sigma_0$ is the two-photon cross section, the probability that two photons will be absorbed, which is $4.4x10^{-35} cm^{-4}$.~\cite{NIST} $g$ is the on resonance line shape factor, defined as 
+$\sigma_0$ is the two-photon cross section, the probability that two photons will be absorbed, which is $4.4x10^{-35} cm.^{-4}$~\cite{NIST} $g$ is the on resonance line shape factor, defined as 
 
 \begin{equation}
 \label{LineShapeFactor}
@@ -178,7 +174,7 @@ The solution to these equations for $7.5 W$ of power inside the build up cavity 
 \label{MetaGraph1}
 \end{figure}
 
-Figure~\ref{TimeGraph} shows the fraction of atoms in each of the states as a function of time for a laser waist of $20 \mu m$, which is helpful to see how the atoms move between states. The maximum time of this graph is the atom-light interaction time given by the width of the step function (twice the laser waist) divided by the root-mean-square velocity of the Maxwell velocity distribution.  The green line is the ground state which starts at one because the initial condition is all of the atoms in the ground state and continuously decreases as time passes. State 1 is the orange line; it quickly increases as atoms are excited through two-photon transition. The number of atoms in state 1 decrease as atoms decay either back to the ground state or to the metastable state. The number of atoms in the metastable state increases as atoms decay to it from the state 1. Atoms only leave the metastable state if they ionize. For this laser waist, only a small fraction of atoms are ionized, see the red line.  It should be noted that the final number of atoms in the metastable state given in Figure~\ref{MetaGraph1} is the number of atoms in state 3 at the end of the atom-light interaction time (the last point on the plot in Figure~\ref{TimeGraph}) plus the fraction of atoms in state 2 that will naturally decay to state 3, about 74 percent.
+Figure~\ref{TimeGraph} shows the fraction of atoms in each of the states as a function of time for a laser waist of $20 \mu m$, which is helpful to see how the atoms move between states. The maximum time of this graph is the atom-light interaction time given by the width of the step function (twice the laser waist) divided by the root-mean-square velocity of the Maxwell velocity distribution.  \text{blue}{Is that true?} The green line is the ground state which starts at one because the initial condition is all of the atoms in the ground state and continuously decreases as time passes. The ground state, state 1 is the green line which decreases quickly as the atoms pass through the laser. State 2 is the orange line; it quickly increases as atoms are excited through two-photon transition. The number of atoms in state 2 decreases as atoms decay either back to the ground state or to the metastable state. The number of atoms in the metastable state increases as atoms decay to it from the state 2. Atoms only leave the metastable state if they ionize. For this laser waist, only a small fraction of atoms are ionized, see the red line.  It should be noted that the final number of atoms in the metastable state given in Figure~\ref{MetaGraph1} is the number of atoms in state 3 at the end of the atom-light interaction time (the last point on the plot in Figure~\ref{TimeGraph}) plus the fraction of atoms in state 2 that will naturally decay to state 3, about 74 percent.
 
 \begin{figure}[h!]
 \centering
@@ -205,11 +201,11 @@ The resulting graph is noticeably different from our first approximation, see Fi
 
 \subsection{Maxwell Velocity Distribution}
 
-Adding the Maxwell velocity distribution presents new difficulties. To account for the range of velocities we first calculated the fraction of atoms in each of a series of intervals. Then we calculated the fraction of atoms from each interval, that is at each different velocity, that reach the metastable state. We then multiplied the fraction of atoms that reach the metastable state from a velocity interval by the fraction of atoms in that velocity interval. Then we added together the resulting fraction from each interval to obtain the total fraction of atoms that end up in the metastable state.  In other words, we evaluated the probability an atom gets transferred to the metastable state for all velocities and then weighted those probabilities according to the Maxwell velocity distribution.  See Figure~\ref{AllGraph} for a comparison of the fraction of atoms reaching the metastable state from each calculation.
+Adding the Maxwell velocity distribution presents new difficulties. To account for the range of velocities we first calculated the fraction of atoms in each of a series of velocity intervals. Then we calculated the fraction of atoms from each interval, that is from each different velocity range, that reach the metastable state. We then multiplied the fraction of atoms that reach the metastable state from a velocity interval by the fraction of atoms in that velocity interval. Then we added together the resulting fraction from each interval to obtain the total fraction of atoms that end up in the metastable state.  In other words, we evaluated the probability an atom gets transferred to the metastable state for all velocities and then weighted those probabilities according to the Maxwell velocity distribution.  See Figure~\ref{AllGraph} for a comparison of the fraction of atoms reaching the metastable state from each calculation.
 
 Modeling the velocity of the atoms as the root-mean-square velocity is a very good approximation. The differences between using the root-mean-square velocity as a single average value and using the Maxwell velocity distribution were quite small. See the similarity between the green and red lines in Figure~\ref{AllGraph}.  This result gives us confidence that in future calculations we do not have to use the computation time to take into account the full Maxwell distribution.
 
-I don't understand this next paragraph.
+I don't understand this next paragraph. \textcolor{blue}{discuss if this is necessary, Will added a sentence about this earlier.}
 The fraction of atoms reaching the metastable state is constant through time. The number of atoms that are in the metastable state at a specific time does change, look back to Figure~\ref{TimeGraph}. The number of atoms in the metastable state increases through time before plateauing. However the total fraction of atoms reaching the metastable is the fraction of atoms that are currently there plus the fraction of atoms in the excited, second state that will decay into the metastable state. The sum of these two numbers remains constant through time which is why our total calculation is stable through time.
   
 
@@ -252,6 +248,8 @@ Next the laser light must be coupled from the Ti-Sapphire laser into the doubler
 \begin{thebibliography}{2}
 
 \bibitem{NIST} A. Kramida, Yu. Ralchenko, J. Reader, J. and NIST ASD Team (2013). NIST Atomic Spectra Database (version 5.1), [Online]. Available: \url{<http://physics.nist.gov/asd>} [Wednesday, 15-Jan-201422:06:55 EST]. National Institute of Standards and Technology, Gaithersburg, MD.
+
+\bibitem{KrTransitions} W. E. Ernst and E. Schulz-Gulde, ``Transition probabilities for Kr I lines from wall-stabilized arc measurements,'' Physica B+C 93, 136–144 (1978)
 
 \bibitem{Cannon} B. D. Cannon, ``Model calculations of continuous-wave laser ionization of krypton,'' PNNL-12253 (1999)
 

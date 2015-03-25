@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  24 MAR 2015 15:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  24 MAR 2015 21:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -420,19 +420,19 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <MetaGraph1.pdf, id=51, 361.35pt x 269.005pt>
 File: MetaGraph1.pdf Graphic file (type pdf)
  <use MetaGraph1.pdf>
-Package pdftex.def Info: MetaGraph1.pdf used on input line 176.
+Package pdftex.def Info: MetaGraph1.pdf used on input line 172.
 (pdftex.def)             Requested size: 433.62pt x 322.80847pt.
  [5 <./MetaGraph1.pdf>] <TimeGraph.pdf, id=70, 361.35pt x 237.88875pt>
 File: TimeGraph.pdf Graphic file (type pdf)
  <use TimeGraph.pdf>
-Package pdftex.def Info: TimeGraph.pdf used on input line 185.
+Package pdftex.def Info: TimeGraph.pdf used on input line 181.
 (pdftex.def)             Requested size: 433.62pt x 285.46867pt.
 
 [6 <./TimeGraph.pdf>] <AllGraph.pdf, id=85, 361.35pt x 233.87375pt>
 File: AllGraph.pdf Graphic file (type pdf)
 
 <use AllGraph.pdf>
-Package pdftex.def Info: AllGraph.pdf used on input line 200.
+Package pdftex.def Info: AllGraph.pdf used on input line 196.
 (pdftex.def)             Requested size: 433.62pt x 280.65063pt.
 
 
@@ -440,19 +440,19 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [7]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 218.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 214.
 
 
-LaTeX Warning: Reference `LaserSetup' on page 8 undefined on input line 218.
+LaTeX Warning: Reference `LaserSetup' on page 8 undefined on input line 214.
 
 [8 <./AllGraph.pdf>]
 
-LaTeX Warning: Reference `LaserSetup' on page 9 undefined on input line 222.
+LaTeX Warning: Reference `LaserSetup' on page 9 undefined on input line 218.
 
 <EtalonError.pdf, id=107, 602.25pt x 361.35pt>
 File: EtalonError.pdf Graphic file (type pdf)
  <use EtalonError.pdf>
-Package pdftex.def Info: EtalonError.pdf used on input line 228.
+Package pdftex.def Info: EtalonError.pdf used on input line 224.
 (pdftex.def)             Requested size: 433.62pt x 260.18283pt.
 
 
@@ -462,35 +462,31 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: ResonatorError.pdf Graphic file (type pdf)
 
 <use ResonatorError.pdf>
-Package pdftex.def Info: ResonatorError.pdf used on input line 237.
+Package pdftex.def Info: ResonatorError.pdf used on input line 233.
 (pdftex.def)             Requested size: 433.62pt x 268.85559pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 254.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 250.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
+) [10 <./EtalonError.pdf>]
 No file Thesis.bbl.
-[10 <./EtalonError.pdf>] [11 <./ResonatorError.pdf>] (./Thesis.aux)
+[11 <./ResonatorError.pdf>] (./Thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
-
-
  ) 
 Here is how much of TeX's memory you used:
- 4771 strings out of 493117
- 63009 string characters out of 6135433
- 140607 words of memory out of 5000000
- 8105 multiletter control sequences out of 15000+600000
+ 4775 strings out of 493117
+ 63092 string characters out of 6135433
+ 140622 words of memory out of 5000000
+ 8109 multiletter control sequences out of 15000+600000
  64494 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,24p,1374b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,24p,1507b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
@@ -503,7 +499,7 @@ st/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
 pe1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/ti
 mes/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on Thesis.pdf (12 pages, 745012 bytes).
+Output written on Thesis.pdf (12 pages, 744937 bytes).
 PDF statistics:
  185 PDF objects out of 1000 (max. 8388607)
  138 compressed objects within 2 object streams
