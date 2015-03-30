@@ -40,7 +40,7 @@ Submitted to the Department of Physics \\
 
 
 \vfill
-\fontsize{12pt}{12pt}{\today}
+\fontsize{12pt}{12pt}{May 11, 2015}
 \vfill
 
 \end{center}
@@ -211,13 +211,13 @@ The fraction of atoms reaching the metastable state is constant through time. Th
 
 \section{Titanium-Sapphire Laser}
 
-A titanium-sapphire (Ti-Sapphire) laser uses titanium doped sapphire crystals, hence the name. These crystals are pumped using another laser. We used a \textcolor{blue}{add specific wavelength and type.} Refer to Figure~\ref{LaserSetup} for the experimental set-up of the laser. The pump laser could be operated at various powers which adjusted the overall output of the Ti-Sapphire laser. We operated the pump laser at both 18 W and 12 W.
+A titanium-sapphire (Ti-Sapphire) laser uses titanium doped sapphire crystals, hence the name. These crystals are pumped using another laser. We used a Coherent Verdi-V18, which is a diode-pumped laser emitting green $(532nm)$ light. Refer to Figure~\ref{LaserSetup} for the experimental set-up of the laser. The pump laser could be operated at various powers which adjusted the overall output of the Ti-Sapphire laser. We operated the pump laser at both 18 W and 12 W.
 
 The first step to operating the laser was to turn on the coolers which cooled the sapphire crystals and the pump laser and then to turn on the pump laser and allow it to warm up and stabilize. The pump laser takes around thirty minutes to warm up, before it is warm it will not generate any light from the Ti-Sapphire laser. It is preferable to allow the pump laser longer to fully stabilize because any drift in the pump laser will cause the Ti-Sapphire deviate from optimum and likely lose lock.
 
 Once the pump laser is warm and stable, the light into the Ti-Sapphire laser must be optimized. The the output from the pump laser passes first through a beam splitter, then through a set of mirrors which can be used to align the beam in all three axis directions. The power to the Ti-Sapphire laser can be measured by using the beam splitter after the Ti-Sapphire laser and reference cavity, again see Figure~\ref{LaserSetup} and a power meter. The alignment in the $z$ direction, the direction of propagation, should not be adjusted, but the horizontal and vertical directions, $x$ and $y$, should both be adjusted to maximize the output power of the Ti-Sapphire laser. 
 
-After optimizing the pump laser into the Ti-Sapphire laser the output voltages can be examined on an oscilloscope and used for diagnostic purposes. The exact setup of the Ti-Sapphire laser is proprietary, however \textcolor{blue}{add basics of TiS here.} The Ti-Sapphire laser from M Squared is controlled from a laptop using the provided software. The desired wavelength is selected on the laptop. After selecting the wavelength, the first step is lock the etalon. The etalon is locked at a point where its error signal crosses zero. The etalon error signal can be seen by selecting 'Etalon Error' from the dropdown menu for one of the monitors and scanning the resonator cavity continuously. The etalon error signal can be seen on the oscilloscope; if it is not symmetric around zero, the pump laser may need to be re-optimized into the Ti-Sapphire laser. A typical signal for the etalon error can be seen in Figure~\ref{EtalonError}. The etalon is then locked by clicking 'Apply Lock' on the computer. The locked signal should be a zero and show only noise. The signal to noise ratio for the etalon is 13.
+After optimizing the pump laser into the Ti-Sapphire laser the output voltages can be examined on an oscilloscope and used for diagnostic purposes. The exact setup of the Ti-Sapphire laser is proprietary, however \textcolor{blue}{add basics of TiS here.} The Ti-Sapphire laser from M Squared is controlled from a laptop using the provided software. The desired wavelength is selected on the laptop. After selecting the wavelength, the first step is lock the etalon. The etalon is locked at a point where its error signal crosses zero. The etalon error signal can be seen by selecting 'Etalon Error' from the dropdown menu for one of the monitors and scanning the resonator cavity continuously. The etalon error signal can be seen on the oscilloscope; if it is not symmetric around zero, the pump laser may need to be re-optimized into the Ti-Sapphire laser. A typical signal for the etalon error can be seen in Figure~\ref{EtalonError}. The etalon is then locked by clicking 'Apply Lock' on the computer. The locked signal should be a zero and show only noise. The signal to noise ratio for the etalon is 13. The locked voltage should be close to $100 V$, if the voltage on the laptop is not within $100 \pm 15 V$ the laser is not locked even if the software reports otherwise.
 
 \begin{figure}[h!]
 \centering
@@ -226,17 +226,34 @@ After optimizing the pump laser into the Ti-Sapphire laser the output voltages c
 \label{EtalonError}
 \end{figure}
 
-The second step of locking the Ti-Sapphire is the resonator cavity. The resonator cavity narrows  band of wavelengths produced by the laser. The resonator error can be viewed on the oscilloscope by scanning the resonator continuously and selecting the resonator error from the monitor menu. The resonator error must cross zero to support a good lock, if the resonator error does not cross zero it should be adjusted using \textcolor{blue}{look up what exactly what which button this is.} As seen in Figure~\ref{ResonatorError} the signal error ratio is large, 377.
+The second step of locking the Ti-Sapphire is the reference cavity. The reference cavity narrows  band of wavelengths produced by the laser. The reference error can be viewed on the oscilloscope by scanning the reference cavity continuously and selecting the reference error from the monitor menu. The reference error must cross zero to support a good lock, if the reference error does not cross zero it should be adjusted by clicking on the "PD Trim" button and a raising or lowering the "Ref Cavity PD Gain" in the pop-up window. Once locked the reference error should be zero on the oscilloscope and $100 \pm 15 V$ on the laptop. As can be seen in Figure~\ref{ResonatorError}, the signal error ratio for the reference cavity is large, 377.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=6in]{ResonatorError.pdf}
-\caption{The maroon line is the resonator error signal before it is locked and the orange line is after the resonator has been locked. The signal to noise ratio is 377.}
+\caption{The maroon line is the reference cavity error signal before it is locked and the orange line is after the resonator has been locked. The signal to noise ratio is 377.}
 \label{ResonatorError}
 \end{figure}
 
-Next the laser light must be coupled from the Ti-Sapphire laser into the doubler \textcolor{blue}{add technical name}. To optimize the light into the doubler 
+Next the laser light must be coupled from the Ti-Sapphire laser into the ECD-X, Ultra-compact Frequency Doubling Accessory. The light passes through a beam splitter and an arrangement of mirrors to adjust alignment before reaching the EDC-X, refer back to Figure~\ref{LaserSetup}. To optimize the light into the ECD-X, look at ``ECD PD 1'' on the oscilloscope and adjust the mirrors in the horizontal and vertical directions between the reference cavity and the ECD-X. The voltage of the ECD photo diodes (PD 1 and PD 2) should be optimized at the same mirror alignment, by maximizing voltage on the oscilloscope. After maximizing PD 1, confirm the alignment by checking that PD 2 is also maximized.
 
+Experience has shown that ECD-X, the doubler, is the most difficult to lock. It is extremely sensitive instability in the etalon error and reference cavity error; if they are locked more than $8 V$ away from $100 V$ the ECD-X is unlikely to lock. The ECD error is the difference of the ECD photo diode signals. To see it on the oscilloscope select ``ECD error'' from the monitor menu and start a continuous scan of the ECD. An example of the ECD error, before and after it is locked, is in Figure~\ref{ECDError}. If the ECD does not cross zero, open the ECD adjustment window on the laptop by clicking ``ECD'' then adjust ``PD 1 gain'' and ``PD 2 gain'' until the ECD error signal crosses zero. If the ECD does not lock when the lock is applied, increase the ``Aux PD gain'' (also in the ECD window.) If the ECD is still not locking, the reference cavity and etalon should be unlocked, re-optimized and relocked. The ECD has a signal-to-noise ratio of 27.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=6in]{ECDError.pdf}
+\caption{The maroon line is the ECD error signal before it is locked, which is difference between PD 1 and PD 2. After it has been locked, the error signal is the orange line. The signal to noise ratio is 27.}
+\label{ECDError}
+\end{figure}
+
+Once the doubler (ECD-X) has been locked the final step is locking the quadrupler (ECD-X-Q.) The process of locking the quadrupler is similar to the process of locking the doubler. The software required to control the quadrupler is a different package from the other sections of the laser, switch to the other control console on the laptop. Just like the doubler, the quadrupler is optimized by looking at PD 1 and PD 2 on the oscilloscope. They should be optimized by adjusting the beam alignment in the horizontal and vertical directions. The ECD-X-Q error can been seen on the oscilloscope and adjusted in the same manner as the ECD-X. It most cases the quadrupler will lock with more ease than the doubler. The locked and unlocked error signals can been seen in Figure~\ref{ECDQError}. The signal-to-noise ratio is comparable to that of the doubler at 20.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=6in]{ECDQError.pdf}
+\caption{The maroon line is the ECD-X-Q error signal before it is locked, which is difference between PD 1 and PD 2. After it has been locked, the error signal is the orange line. The signal to noise ratio is 20.}
+\label{ECDQError}
+\end{figure}
 
 \section{Laser Stabilization}
 

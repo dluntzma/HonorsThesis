@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  24 MAR 2015 21:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  29 MAR 2015 22:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -468,22 +468,45 @@ Package pdftex.def Info: ResonatorError.pdf used on input line 233.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 250.
+
+LaTeX Warning: Reference `LaserSetup' on page 10 undefined on input line 238.
+
+[10 <./EtalonError.pdf>] <ECDError.pdf, id=130, 602.25pt x 361.35pt>
+File: ECDError.pdf Graphic file (type pdf)
+
+<use ECDError.pdf>
+Package pdftex.def Info: ECDError.pdf used on input line 244.
+(pdftex.def)             Requested size: 433.62pt x 260.18283pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11 <./ResonatorError.pdf>] <ECDQError.pdf, id=150, 602.25pt x 362.35374pt>
+File: ECDQError.pdf Graphic file (type pdf)
+
+<use ECDQError.pdf>
+Package pdftex.def Info: ECDQError.pdf used on input line 253.
+(pdftex.def)             Requested size: 433.62pt x 260.90555pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 267.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [10 <./EtalonError.pdf>]
+)
 No file Thesis.bbl.
-[11 <./ResonatorError.pdf>] (./Thesis.aux)
+[12 <./ECDError.pdf>] [13 <./ECDQError.pdf>] (./Thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4775 strings out of 493117
- 63092 string characters out of 6135433
- 140622 words of memory out of 5000000
- 8109 multiletter control sequences out of 15000+600000
+ 4787 strings out of 493117
+ 63276 string characters out of 6135433
+ 140652 words of memory out of 5000000
+ 8119 multiletter control sequences out of 15000+600000
  64494 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,8n,24p,1507b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -499,10 +522,10 @@ st/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
 pe1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/ti
 mes/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on Thesis.pdf (12 pages, 744937 bytes).
+Output written on Thesis.pdf (14 pages, 1212865 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
+ 224 PDF objects out of 1000 (max. 8388607)
+ 169 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
