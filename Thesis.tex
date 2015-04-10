@@ -8,6 +8,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{mathptmx}
 \usepackage{setspace}
+\usepackage{subcaption}
 
 
 \begin{document}
@@ -328,7 +329,31 @@ This measurement is repeated at a number of locations along the $z$ axis. Then t
 w_0 \sqrt{1 + \frac{\lambda^2 \ (z-z_0)^2}{\pi \  w_0^2}}
 \end{equation}
 
-Where $w_0$ is the minimum beam waist, $z_0$ is the location of the minimum beam waist on the $z$ axis and $\lambda$ is the wavelength of the light.
+Where $w_0$ is the minimum beam waist, $z_0$ is the location of the minimum beam waist on the $z$ axis and $\lambda$ is the wavelength of the light. $w_0$ and $z_0$ give us the characteristics of the laser beam.
+
+When we fully locked the Ti:Sapphire laser, the emitted beam was visibly diverging in the horizontal direction. However, the above measurement suggested that our light was collimated, an obvious contradiction to our observations. We realized that in addition to the $235$ nm light the laser also emitted blue light and that blue light was interfering with our ability to measure the $235$ nm light. We were measuring both wavelengths, not just the $235$ nm, and the blue light was close to collimated.
+
+To avoid measuring the blue light with the power meter, we measured the effective beam waists at various $z$ locations directly using a ruler. This was a rougher measurement, much more susceptible to systematic error due to parallax when measuring the waist. However it was a relatively simple measurement that we could preform quickly and see the results were usable. The results we obtained are in Figures~\ref{WaistFit}. 
+
+\begin{figure}
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width= .95\linewidth]{WaistFitS}
+  \caption{Close-up results of waist measurements plotted }
+  \label{WaistFitS}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width= .95\linewidth]{WaistFitL}
+  \caption{A subfigure}
+  \label{WaistFitL}
+\end{subfigure}
+\caption{A figure with two subfigures}
+\label{WaistFit}
+\end{figure}
+
+
 
 \section{Appendix}
 

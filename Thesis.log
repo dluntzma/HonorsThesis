@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  8 APR 2015 22:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  9 APR 2015 22:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -270,44 +270,77 @@ LaTeX Info: Redefining \hbar on input line 50.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-Class revtex4-1 Info: Patching LaTeX tabular. on input line 13.
-Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 13.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 13.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 13.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 13.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(./Thesis.aux)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen116
+\captionmargin@=\dimen117
+\captionwidth=\dimen118
+\caption@tempdima=\dimen119
+\caption@indent=\dimen120
+\caption@parindent=\dimen121
+\caption@hangindent=\dimen122
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\par \vskip \abovecapti
+onskip \begingroup \small \rmfamily \sbox \@tempboxa {\let \\\heading@cr \@make
+@capt@title {#1}{#2}}\@ifdim {\wd \@tempboxa >\hsize }{\begingroup \samepage \f
+lushing \let \footnote \@footnotemark@gobble \@make@capt@title {#1}{#2}\par \en
+dgroup }{\global \@minipagefalse \hb@xt@ \hsize {\hfil \unhbox \@tempboxa \hfil
+ }}\endgroup \vskip \belowcaptionskip .
+\c@ContinuedFloat=\count109
+)
+\c@subfigure=\count110
+\c@subtable=\count111
+)
+Class revtex4-1 Info: Patching LaTeX tabular. on input line 14.
+Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 14.
+
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 14.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 14.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 14.
+ (./Thesis.aux)
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 14.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-)
-(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+) (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count109
-\scratchdimen=\dimen116
+\scratchcounter=\count112
+\scratchdimen=\dimen123
 \scratchbox=\box46
-\nofMPsegments=\count110
-\nofMParguments=\count111
+\nofMPsegments=\count113
+\nofMParguments=\count114
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count112
-\MPscratchDim=\dimen117
-\MPnumerator=\count113
-\makeMPintoPDFobject=\count114
+\MPscratchCnt=\count115
+\MPscratchDim=\dimen124
+\MPnumerator=\count116
+\makeMPintoPDFobject=\count117
 \everyMPtoPDFconversion=\toks24
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -357,67 +390,63 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 \openout3 = `ThesisNotes.bib'.
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <18> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 21.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 22.
 
 [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 51.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 61
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 52.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 62
 .
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 61
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 62
 .
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 61
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 62
 .
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 61
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 62
 .
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 61.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 62.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
  [1]
 <KrEnergyLevels.pdf, id=15, 794.97pt x 614.295pt>
 File: KrEnergyLevels.pdf Graphic file (type pdf)
  <use KrEnergyLevels.pdf>
-Package pdftex.def Info: KrEnergyLevels.pdf used on input line 67.
+Package pdftex.def Info: KrEnergyLevels.pdf used on input line 68.
 (pdftex.def)             Requested size: 433.62pt x 335.07939pt.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
 
 [2 <./KrEnergyLevels.pdf>] [3] [4]
 <MetaGraph1.pdf, id=50, 361.35pt x 269.005pt>
 File: MetaGraph1.pdf Graphic file (type pdf)
  <use MetaGraph1.pdf>
-Package pdftex.def Info: MetaGraph1.pdf used on input line 177.
+Package pdftex.def Info: MetaGraph1.pdf used on input line 178.
 (pdftex.def)             Requested size: 433.62pt x 322.80847pt.
 
 
@@ -426,7 +455,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [5] <TimeGraph.pdf, id=55, 361.35pt x 237.88875pt>
 File: TimeGraph.pdf Graphic file (type pdf)
  <use TimeGraph.pdf>
-Package pdftex.def Info: TimeGraph.pdf used on input line 186.
+Package pdftex.def Info: TimeGraph.pdf used on input line 187.
 (pdftex.def)             Requested size: 433.62pt x 285.46867pt.
 
 
@@ -436,7 +465,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: AllGraph.pdf Graphic file (type pdf)
 
 <use AllGraph.pdf>
-Package pdftex.def Info: AllGraph.pdf used on input line 201.
+Package pdftex.def Info: AllGraph.pdf used on input line 202.
 (pdftex.def)             Requested size: 433.62pt x 280.65063pt.
 
 
@@ -446,7 +475,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <InsideTiS.pdf, id=107, 722.7pt x 426.59375pt>
 File: InsideTiS.pdf Graphic file (type pdf)
  <use InsideTiS.pdf>
-Package pdftex.def Info: InsideTiS.pdf used on input line 222.
+Package pdftex.def Info: InsideTiS.pdf used on input line 223.
 (pdftex.def)             Requested size: 433.62pt x 255.95822pt.
 
 
@@ -456,13 +485,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: LaserSetup.pdf Graphic file (type pdf)
 
 <use LaserSetup.pdf>
-Package pdftex.def Info: LaserSetup.pdf used on input line 237.
+Package pdftex.def Info: LaserSetup.pdf used on input line 238.
 (pdftex.def)             Requested size: 433.62pt x 335.07939pt.
  [11 <./LaserSetup.pdf>] [12]
 <EtalonError.pdf, id=195, 602.25pt x 361.35pt>
 File: EtalonError.pdf Graphic file (type pdf)
  <use EtalonError.pdf>
-Package pdftex.def Info: EtalonError.pdf used on input line 256.
+Package pdftex.def Info: EtalonError.pdf used on input line 257.
 (pdftex.def)             Requested size: 433.62pt x 260.18283pt.
 
 
@@ -472,14 +501,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <ResonatorError.pdf, id=217, 602.25pt x 373.395pt>
 File: ResonatorError.pdf Graphic file (type pdf)
  <use ResonatorError.pdf>
-Package pdftex.def Info: ResonatorError.pdf used on input line 269.
+Package pdftex.def Info: ResonatorError.pdf used on input line 270.
 (pdftex.def)             Requested size: 433.62pt x 268.85559pt.
 
 [15 <./ResonatorError.pdf>] <ECDError.pdf, id=236, 602.25pt x 361.35pt>
 File: ECDError.pdf Graphic file (type pdf)
 
 <use ECDError.pdf>
-Package pdftex.def Info: ECDError.pdf used on input line 286.
+Package pdftex.def Info: ECDError.pdf used on input line 287.
 (pdftex.def)             Requested size: 433.62pt x 260.18283pt.
 
 
@@ -488,7 +517,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [16] <ECDQError.pdf, id=240, 602.25pt x 362.35374pt>
 File: ECDQError.pdf Graphic file (type pdf)
  <use ECDQError.pdf>
-Package pdftex.def Info: ECDQError.pdf used on input line 295.
+Package pdftex.def Info: ECDQError.pdf used on input line 296.
 (pdftex.def)             Requested size: 433.62pt x 260.90555pt.
 
 
@@ -498,24 +527,41 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <FitWaist.pdf, id=278, 361.35pt x 230.8625pt>
 File: FitWaist.pdf Graphic file (type pdf)
  <use FitWaist.pdf>
-Package pdftex.def Info: FitWaist.pdf used on input line 320.
+Package pdftex.def Info: FitWaist.pdf used on input line 321.
 (pdftex.def)             Requested size: 433.62pt x 277.03712pt.
- [19 <./FitWaist.pdf>]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 340.
+ [19 <./FitWaist.pdf>] <WaistFitS.pdf, id=292, 361.35pt x 252.945pt>
+File: WaistFitS.pdf Graphic file (type pdf)
+ <use WaistFitS.pdf>
+Package pdftex.def Info: WaistFitS.pdf used on input line 342.
+(pdftex.def)             Requested size: 222.29929pt x 155.60849pt.
 
- (/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1cmtt.fd
+<WaistFitL.pdf, id=293, 361.35pt x 249.93375pt>
+File: WaistFitL.pdf Graphic file (type pdf)
+ <use WaistFitL.pdf>
+Package pdftex.def Info: WaistFitL.pdf used on input line 348.
+(pdftex.def)             Requested size: 222.29929pt x 153.75601pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 362.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 362.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 362.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 364.
+
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
+) [20 <./WaistFitS.pdf> <./WaistFitL.pdf>]
 No file Thesis.bbl.
-[20] (./Thesis.aux) ) 
+[21] (./Thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 4811 strings out of 493117
- 63649 string characters out of 6135433
- 140761 words of memory out of 5000000
- 8141 multiletter control sequences out of 15000+600000
- 63335 words of font info for 119 fonts, out of 8000000 for 9000
+ 5891 strings out of 493117
+ 83398 string characters out of 6135433
+ 161356 words of memory out of 5000000
+ 9222 multiletter control sequences out of 15000+600000
+ 56639 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,24p,2135b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,8n,40p,2135b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-sup
 er/cm-super-t1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.
 enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.p
@@ -528,10 +574,10 @@ xlive/2014/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2014/
 texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist
 /fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on Thesis.pdf (21 pages, 1430436 bytes).
+Output written on Thesis.pdf (22 pages, 1526574 bytes).
 PDF statistics:
- 332 PDF objects out of 1000 (max. 8388607)
- 237 compressed objects within 3 object streams
+ 362 PDF objects out of 1000 (max. 8388607)
+ 261 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
