@@ -51,18 +51,26 @@ Submitted to the Department of Physics \\
 
 \section{Introduction} 
 
-Radioactive dating is often the most effective method to determine the time at which an object originated. Radioactive carbon dating is a very popular method to date biological samples. However, radioactive dating is that limited by the half-life of the isotope used. At shorter times none of the atoms will have decayed, at longer time all of them will have. To date outside the range offered by carbon other atoms can be used. In this paper we address using krypton for radioactive dating.
-
-The concept behind radiokrypton dating is the same as any other radioactive dating. The percentage the radioactive isotope is measured relative to the other isotopes of that atom. However, the mechanics of counting the relative numbers of each isotope is very different for different atoms. Carbon dating uses mass spectrometry of ionized atoms to count the number of each isotope. Krypton dating requires a different method because krypton is a noble gas. There are three methods that have been used to count krypton isotopes. The first is low level counting (LLC) where the sample is allowed to decay and the radiation is detected. The downside of LLC is that it requires a large sample and can take a long time. The second method is accelerator mass spectrometry (AMS) which involves striping all electrons from the atoms. AMS is faster but requires an accelerator which is expensive. The last method used to date krypton is called Atom Trap Trace Analysis an application of Magneto Optical Traps first designed at Argonne National Laboratory by Zheng-Tian Lu to preform trace analysis on radioactive isotopes.~\cite{ANL}
+Radioactive dating is often the most effective method to determine the time from which an object originated. Radioactive carbon dating is a very popular method to date biological samples. However, radioactive dating is that limited by the half-life of the isotope used. At shorter times none of the atoms will have decayed, at longer times all of them will have. To date outside the range offered by carbon other atoms can be used. In this paper we address using krypton for radioactive dating.
 
 Krypton isotopes have a number of applications for a variety of fields. Kr-81 has a half-life of approximately $2.3 x10^5$ years and can be used to date underground water which is used for underground aquifers.~\cite{UndergroundWater} Kr-81 can also be use to date ice core samples in the future. Kr-85 has a half-life of 10.75 years and can be used to measure nuclear proliferation to monitor nuclear explosions and nuclear fuel reprocessing.~\cite{Nuclear1,Nuclear2}
 
-This senior thesis is the first year of a three year project designed to optically produce metastable krypton atoms for purposes of Atom Trap Trace Analysis (ATTA). ATTA involves using 215 nm light and a two photon transition to move krypton atoms to a metastable state. Once in a metastable state the krypton atoms can be cooled and trapped. Once trapped the atoms are counted by fluorescence detection. \textcolor{blue}{We should talk about the mechanics of this.}
+The concept behind radiokrypton dating is the same as any other radioactive dating. The percentage the radioactive isotope is measured relative to the other isotopes of that atom. However, the mechanics of counting the relative numbers of each isotope is very different for different atoms. Carbon dating uses mass spectrometry of ionized atoms to count the number of each isotope. Krypton dating requires a different method because krypton is a noble gas and cannot be ionized as carbon can. There are three methods that have been used to count krypton isotopes. The first is low level counting (LLC) where the sample is allowed to decay and the radiation is detected. The downside of LLC is that it requires a large sample and can take a long time. The second method is accelerator mass spectrometry (AMS) which involves striping all electrons from the atoms then preforming spectrometry on the nucleus. AMS is faster than LLC but requires an accelerator which is expensive. The last method used to date krypton is called Atom Trap Trace Analysis (ATTA) an application of Magneto Optical Traps first designed at Argonne National Laboratory by Zheng-Tian Lu to preform trace analysis on radioactive isotopes.~\cite{ANL}
 
-The capabilities of ATTA are limited by the efficiency the transfer of krypton atoms to the metastable state since only atoms in the metastable state can be trapped and counted. Previous generations of ATTA have used \textcolor{blue}{RF discharge} to excite the krypton atoms. \textcolor{blue}{RF discharge} is \textcolor{blue}{???\%} efficient and has the possibility of cross contamination, when particles become embedded in the chamber wall and are released later into a different sample. how we are fixing that
+This senior thesis is the first year of a three year project designed to optically produce metastable krypton atoms for purposes of Atom Trap Trace Analysis. ATTA involves exciting krypton atoms to a metastable state. Once in a metastable state the krypton atoms can be laser cooled and trapped. \textcolor{blue}{should I add details about laser cooling?} Once trapped the atoms are counted by fluorescence detection. \textcolor{blue}{We should talk about the mechanics of this.}
+
+The capabilities of ATTA are limited by the transfer efficiency of krypton atoms to the metastable state since only atoms in the metastable state can be trapped and counted. Various possible methods of exciting kryptons include using an electron beam,~\cite{EBeam1, EBeam2, EBeam3, EBeam4} surface-wave sustained plasma,~\cite{Plasma1} DC discharge,~\cite{DCDis1, DCDis2, DCDis3, DCDis4, DCDis5} and RF discharge.~\cite{RFDis1, RFDis2} These methods excite up to $\approx 10^{-3}$ of the krypton atoms to the metastable state. The best metastable fraction to date was obtained using RF discharge on the previous generation of ATTA. RF discharge requires using a high voltage oscillating in the radio frequency to excite krypton atoms. The drawback of RF discharge is the possibility of cross contamination, because RF discharge involves highly energetic electrons which can create ions, those particles can become embedded in the chamber wall and released later into a different sample. 
+
+To improve the rate by which krypton atoms reach the metastable state and eliminate the chance of cross contamination rather than use a RF discharge we use a laser to produce $215$ nm light and a two photon transition to excite atoms to the metastable state. The $215$ nm light is produced by a Ti:Sapphire laser and coupled into an optical cavity within a vacuum. The krypton atoms are then passed through a capillary plate and the optical cavity, perpendicular to the direction of propagation of the $215$ nm light, see Figure~\ref{ExperimentSetup}.The cavity will be designed based off the calculations in the theory section of this thesis to optimize the metastable fraction, that is the number of atoms in the metastable state. The metastable atoms will then be counted by isotope \textcolor{blue}{talk about this again, see above.}
  
-We began by doing the theoretical calculations to determine the expected efficiency of our setup. We then proceeded to setup, operate and stabilize the Ti:Sapphire laser. Since the Ti:Sapphire laser was used 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=6in]{ExperimentSetup.pdf}
+\caption{\textcolor{blue}{should I use this because iodine lock versus rubidium lock}}
+\label{ExperimentSetup}
+\end{figure}
 
+Part of this thesis was learning to lock and operate the Ti:Sapphire laser. To excite krypton we needed to obtain $215$ nm light from the laser. However the parts needed to produce $215$ nm light were backordered. The Ti:Sapphire laser was also being used for a concurrent experiment designed to precisely measure the spectral lines of beryllium. For the beryllium experiment the Ti:Sapphire was used to produce $235$ nm light. All of the work done with the Ti:Sapphire laser in this thesis was done using the laser setup for the beryllium experiment and $235$ nm light.
 
 
 \section{Theory}
@@ -73,7 +81,7 @@ To get the kryptons to the metastable state we used a $215 nm$ light to drive a 
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=6in]{KrEnergyLevels.pdf}
+\includegraphics[width=4in]{KrEnergyLevels.pdf}
 \caption{The energy levels of krypton. This figure only includes energy levels that are relevant to our experiment. Atoms are excited from the $4p^6$ $^1S_0$ state using two-photons to the $5p_{[3/2]_2}$ state then they decay either back to the $4p^6$ $^1S_0$ state or to the $5s_{[3/2]_2}$ state. Atoms can be ionized from both the $5s_{[3/2]_2}$ state and the $5p_{[3/2]_2}$ state.}
 \label{KrEnergyLevels}
 \end{figure}
@@ -372,18 +380,41 @@ Based on these results, we decided to use a $200$ mm lens which should give us a
 
 \textcolor{magenta}{Put Mathematica notebooks here!}
 
+\singlespacing{
+\begin{thebibliography}{18}
 
-\begin{thebibliography}{9}
+\bibitem{UndergroundWater} N. C. Sturchio, X. Du, R. Purtschert, B. E. Lehmann, M. Sultan, L. J. Patterson, Z.-T. Lu, P. Mueller, K. Bailey, T. P. O'Connor, L. Young, R. Lorenzo, B. M. Kennedy, M. van Soest, Z. El Alfy, B. El Kaliouby, Y. Dawood, and A. M. A. Abdallah, ``One million year old groundwater in the Sahara revealed by krypton-81 and chlorine-36'', Geophysical Research Letters 31(5), L05503 (2004)
 
-\bibitem{ANL} C. Y. Chen, Y. M. Li, K. Bailey, T. P. O'Conner, L. Young, and Z.-T. Lu, ?Ultrasensitive isotope trace analyses with a magneto-optical trap,? Science 286, 1139. (1999)
-
-\bibitem{UndergroundWater} N. C. Sturchio, X. Du, R. Purtschert, B. E. Lehmann, M. Sultan, L. J. Patterson, Z.-T. Lu, P. Mueller, K. Bailey, T. P. O?Connor, L. Young, R. Lorenzo, B. M. Kennedy, M. van Soest, Z. El Alfy, B. El Kaliouby, Y. Dawood, and A. M. A. Abdallah, ? One million year old groundwater in the Sahara revealed by krypton-81 and chlorine-36?, Geophysical Research Letters 31(5), L05503 (2004)
-
-\bibitem{Nuclear1} M. B. Kalinowski, H. Sartorius, S. Uhl, W. Weiss, ?Conclusions on plutonium separation fromatmospheric krypton-85 measured at various distances from the Karlsruhe reprocessing plant,?
+\bibitem{Nuclear1} M. B. Kalinowski, H. Sartorius, S. Uhl, W. Weiss, ``Conclusions on plutonium separation fromatmospheric krypton-85 measured at various distances from the Karlsruhe reprocessing plant,''
 Journal of Environmental Radioactivity 73 (2), 203e222 (2004)
 
-\bibitem{Nuclear2} R. S. Kemp, C. Schlosser, ?A performance estimate for the detection of unde- clared nuclearfuel reprocessing by atmospheric 85Kr,? Journal of Environmental Radioactivity 99, 1341e1348,
+\bibitem{Nuclear2} R. S. Kemp, C. Schlosser, ``A performance estimate for the detection of unde- clared nuclearfuel reprocessing by atmospheric 85Kr,'' Journal of Environmental Radioactivity 99, 1341e1348,
 2008 Erratum Journal of Environmental Radioactivity 100, 99 (2009)
+
+\bibitem{ANL} C. Y. Chen, Y. M. Li, K. Bailey, T. P. O'Conner, L. Young, and Z.-T. Lu, ``Ultrasensitive isotope trace analyses with a magneto-optical trap,'' Science 286, 1139. (1999)
+
+\bibitem{EBeam1} R. S. Freund, ``High current low voltage electron bombarder for excitation of a molecular beam,'' Rev. Sci. Instrum. 41, 1213 (1970)
+
+\bibitem{EBeam2} R. D. Rundel, F. B. Dunning, and R.F.Stebbings, ``Velocity distributions in metastable atom beams produced by coaxial electron-impact,'' Rev. Sci. Instrum. 45, 116 (1974)
+
+\bibitem{EBeam3} B. Brutschy and H. Haberland, ``High-intensity beam of metastable helium-atoms with good velocity resolution,'' J. Phys. E 10, 90 (1977)
+
+\bibitem{EBeam4} T. W. Riddle, M. Onellion, F. B. Dunning, and G. K. Walters, ``Polarized he (23s) thermal metastable atom source,'' Rev. Sci. Instrum. 52, 797 (1981)
+
+\bibitem{Plasma1} M. E. Bannister and J. L. Cecchi, ``Metastable argon beam source using a surface-wave sustained plasma,'' J. Vac. Sci. Technol. A 12, 106 (1994)
+
+\bibitem{DCDis1} D. W. Fahey, W. F. Parks, and L. D. Schearer, ``High-flux beam source of thermal rare-gas metastable atoms,'' J. Phys. E. 13, 381 (1980)
+
+\bibitem{DCDis2} M. J. Verheijen, H. C. Beijerinck, L. H. A. M. v. Moll, J. Driessen, and N. F. Verster, ``A discharge excited supersonic source of metastable rare-gas atoms,'' J. Phys. E 17, 904 (1984)
+
+\bibitem{DCDis3} J. A. Brand, J. E. Furst, T. J. Gay, and L. D. Schearer, ``Production of a high-density stateselected metastable neon beam,'' Rev. Sci. Instrum. 63, 163 (1992)
+
+\bibitem{DCDis4} J. Kawanaka, M. Hagiuda, K. Shimizu, F. Shimizu, and H.Takuma, ``Generation of an intense low-velocity metastable-neon atomic-beam,'' Appl. Phys. B 56, 21 (1993)
+
+\bibitem{DCDis5} W. Rooijakkers, W. Hogervorst, and W. Vassen, ``An intense collimated beam of metastable helium atoms by two-dimensional laser cooling,'' Opt. Commun. 123, 321 (1996)
+
+\bibitem{RFDis1} O. Carnal and J. Mlynek, ``Youngs double-slit experiment with atoms - a simple atom interferometer,'' Phys. Rev. Lett. 66, 2689 (1991) 
+\bibitem{RFDis2} C. Y. Chen, K. Bailey, Y. M. Li, T. P. O'Connor, Z.-T. Lu, X. Du, L. Young, and G. Winkler, ``Beam of metastable krypton atoms extracted from a rf-driven discharge,'' Rev. Sci. Instrum. 72, 271 (2001)
 
 \bibitem{NIST} A. Kramida, Yu. Ralchenko, J. Reader, J. and NIST ASD Team (2013). NIST Atomic Spectra Database (version 5.1), [Online]. Available: \url{<http://physics.nist.gov/asd>} [Wednesday, 15-Jan-201422:06:55 EST]. National Institute of Standards and Technology, Gaithersburg, MD.
 
@@ -391,12 +422,12 @@ Journal of Environmental Radioactivity 73 (2), 203e222 (2004)
 
 \bibitem{Cannon} B. D. Cannon, ``Model calculations of continuous-wave laser ionization of krypton,'' PNNL-12253 (1999)
 
-\bibitem{Ti:S} M Squared Lasers Ltd, "SolsTiS - Narrow Lindwidth, Tunable CW Ti:Sapphire Laser User Manual" v10.3
+\bibitem{Ti:S} M Squared Lasers Ltd, ``SolsTiS - Narrow Lindwidth, Tunable CW Ti:Sapphire Laser User Manual'' v10.3
 
-\bibitem{ECDX} M Squared Lasers Ltd, "ECD-X - Ultra-compact Frequency Doubling Accessory User Manual" v1.8
+\bibitem{ECDX} M Squared Lasers Ltd, ``ECD-X - Ultra-compact Frequency Doubling Accessory User Manual'' v1.8
 
 
 \end{thebibliography}
-
+}
 
 \end{document}

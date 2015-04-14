@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  12 APR 2015 22:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  14 APR 2015 16:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -436,128 +436,126 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
  [1]
-<KrEnergyLevels.pdf, id=13, 794.97pt x 614.295pt>
+<ExperimentSetup.pdf, id=13, 279.0425pt x 125.46875pt>
+File: ExperimentSetup.pdf Graphic file (type pdf)
+
+<use ExperimentSetup.pdf>
+Package pdftex.def Info: ExperimentSetup.pdf used on input line 68.
+(pdftex.def)             Requested size: 433.62pt x 194.97995pt.
+ [2 <./ExperimentSetup.pdf>]
+<KrEnergyLevels.pdf, id=33, 187.70125pt x 169.63374pt>
 File: KrEnergyLevels.pdf Graphic file (type pdf)
- <use KrEnergyLevels.pdf>
-Package pdftex.def Info: KrEnergyLevels.pdf used on input line 76.
-(pdftex.def)             Requested size: 433.62pt x 335.07939pt.
+
+<use KrEnergyLevels.pdf>
+Package pdftex.def Info: KrEnergyLevels.pdf used on input line 84.
+(pdftex.def)             Requested size: 289.07999pt x 261.2704pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2] [3 <./KrEnergyLevels.pdf>] [4] [5]
-<MetaGraph1.pdf, id=54, 361.35pt x 269.005pt>
+[3] [4 <./KrEnergyLevels.pdf>] [5] [6]
+<MetaGraph1.pdf, id=66, 361.35pt x 269.005pt>
 File: MetaGraph1.pdf Graphic file (type pdf)
  <use MetaGraph1.pdf>
-Package pdftex.def Info: MetaGraph1.pdf used on input line 186.
+Package pdftex.def Info: MetaGraph1.pdf used on input line 194.
 (pdftex.def)             Requested size: 433.62pt x 322.80847pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<TimeGraph.pdf, id=55, 361.35pt x 237.88875pt>
+ [7 <./MetaGraph1.pdf>] <TimeGraph.pdf, id=85, 361.35pt x 237.88875pt>
 File: TimeGraph.pdf Graphic file (type pdf)
  <use TimeGraph.pdf>
-Package pdftex.def Info: TimeGraph.pdf used on input line 195.
+Package pdftex.def Info: TimeGraph.pdf used on input line 203.
 (pdftex.def)             Requested size: 433.62pt x 285.46867pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[6] <AllGraph.pdf, id=60, 361.35pt x 233.87375pt>
+[8 <./TimeGraph.pdf>] <AllGraph.pdf, id=99, 361.35pt x 233.87375pt>
 File: AllGraph.pdf Graphic file (type pdf)
- <use AllGraph.pdf>
-Package pdftex.def Info: AllGraph.pdf used on input line 210.
+
+<use AllGraph.pdf>
+Package pdftex.def Info: AllGraph.pdf used on input line 218.
 (pdftex.def)             Requested size: 433.62pt x 280.65063pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[7 <./MetaGraph1.pdf>] [8 <./TimeGraph.pdf>] [9 <./AllGraph.pdf>]
-<InsideTiS.pdf, id=110, 722.7pt x 426.59375pt>
+ [9 <./AllGraph.pdf>] [10]
+<InsideTiS.pdf, id=121, 722.7pt x 426.59375pt>
 File: InsideTiS.pdf Graphic file (type pdf)
  <use InsideTiS.pdf>
-Package pdftex.def Info: InsideTiS.pdf used on input line 231.
+Package pdftex.def Info: InsideTiS.pdf used on input line 239.
 (pdftex.def)             Requested size: 433.62pt x 255.95822pt.
- [10 <./InsideTiS.pdf>] <LaserSetup.pdf, id=127, 794.97pt x 614.295pt>
+ [11 <./InsideTiS.pdf>] <LaserSetup.pdf, id=138, 794.97pt x 614.295pt>
 File: LaserSetup.pdf Graphic file (type pdf)
  <use LaserSetup.pdf>
-Package pdftex.def Info: LaserSetup.pdf used on input line 246.
+Package pdftex.def Info: LaserSetup.pdf used on input line 254.
 (pdftex.def)             Requested size: 433.62pt x 335.07939pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11] [12 <./LaserSetup.pdf>] [13]
-<EtalonError.pdf, id=198, 602.25pt x 361.35pt>
+[12] [13 <./LaserSetup.pdf>] [14]
+<EtalonError.pdf, id=209, 602.25pt x 361.35pt>
 File: EtalonError.pdf Graphic file (type pdf)
  <use EtalonError.pdf>
-Package pdftex.def Info: EtalonError.pdf used on input line 265.
+Package pdftex.def Info: EtalonError.pdf used on input line 273.
 (pdftex.def)             Requested size: 433.62pt x 260.18283pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[14] <ResonatorError.pdf, id=202, 602.25pt x 373.395pt>
+ [15 <./EtalonError.pdf>] <ResonatorError.pdf, id=228, 602.25pt x 373.395pt>
 File: ResonatorError.pdf Graphic file (type pdf)
 
 <use ResonatorError.pdf>
-Package pdftex.def Info: ResonatorError.pdf used on input line 278.
+Package pdftex.def Info: ResonatorError.pdf used on input line 286.
 (pdftex.def)             Requested size: 433.62pt x 268.85559pt.
- [15 <./EtalonError.pdf>] [16 <./ResonatorError.pdf>]
-<ECDError.pdf, id=239, 602.25pt x 361.35pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[16] [17 <./ResonatorError.pdf>] <ECDError.pdf, id=250, 602.25pt x 361.35pt>
 File: ECDError.pdf Graphic file (type pdf)
- <use ECDError.pdf>
-Package pdftex.def Info: ECDError.pdf used on input line 295.
+
+<use ECDError.pdf>
+Package pdftex.def Info: ECDError.pdf used on input line 303.
 (pdftex.def)             Requested size: 433.62pt x 260.18283pt.
- [17 <./ECDError.pdf>] <ECDQError.pdf, id=258, 602.25pt x 362.35374pt>
+ [18 <./ECDError.pdf>]
+<ECDQError.pdf, id=270, 602.25pt x 362.35374pt>
 File: ECDQError.pdf Graphic file (type pdf)
  <use ECDQError.pdf>
-Package pdftex.def Info: ECDQError.pdf used on input line 304.
+Package pdftex.def Info: ECDQError.pdf used on input line 312.
 (pdftex.def)             Requested size: 433.62pt x 260.90555pt.
-
-[18 <./ECDQError.pdf>] <FitWaist.pdf, id=278, 361.35pt x 230.8625pt>
+ [19 <./ECDQError.pdf>] <FitWaist.pdf, id=289, 361.35pt x 230.8625pt>
 File: FitWaist.pdf Graphic file (type pdf)
-
-<use FitWaist.pdf>
-Package pdftex.def Info: FitWaist.pdf used on input line 331.
+ <use FitWaist.pdf>
+Package pdftex.def Info: FitWaist.pdf used on input line 339.
 (pdftex.def)             Requested size: 433.62pt x 277.03712pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19] [20 <./FitWaist.pdf>] <WaistFitS.pdf, id=295, 361.35pt x 252.945pt>
+[20] [21 <./FitWaist.pdf>] <WaistFitS.pdf, id=307, 361.35pt x 252.945pt>
 File: WaistFitS.pdf Graphic file (type pdf)
 
 <use WaistFitS.pdf>
-Package pdftex.def Info: WaistFitS.pdf used on input line 354.
+Package pdftex.def Info: WaistFitS.pdf used on input line 362.
 (pdftex.def)             Requested size: 222.29929pt x 155.60849pt.
- <WaistFitL.pdf, id=296, 361.35pt x 249.93375pt>
+ <WaistFitL.pdf, id=308, 361.35pt x 249.93375pt>
 File: WaistFitL.pdf Graphic file (type pdf)
 
 <use WaistFitL.pdf>
-Package pdftex.def Info: WaistFitL.pdf used on input line 360.
+Package pdftex.def Info: WaistFitL.pdf used on input line 368.
 (pdftex.def)             Requested size: 222.29929pt x 153.75601pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 376.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 384.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 376.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 384.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 376.
- [21 <./WaistFitS.pdf> <./WaistFitL.pdf>]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 388.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 384.
+ [22 <./WaistFitS.pdf> <./WaistFitL.pdf>]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 420.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 No file Thesis.bbl.
-[22] (./Thesis.aux) ) 
+No file Thesis.bbl.
+[23] (./Thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 5907 strings out of 493117
- 83662 string characters out of 6135433
- 161416 words of memory out of 5000000
- 9238 multiletter control sequences out of 15000+600000
+ 5962 strings out of 493117
+ 84454 string characters out of 6135433
+ 161624 words of memory out of 5000000
+ 9292 multiletter control sequences out of 15000+600000
  56639 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,8n,40p,2135b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -573,10 +571,10 @@ xlive/2014/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2014/
 texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist
 /fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on Thesis.pdf (23 pages, 1530923 bytes).
+Output written on Thesis.pdf (24 pages, 1522564 bytes).
 PDF statistics:
- 365 PDF objects out of 1000 (max. 8388607)
- 263 compressed objects within 3 object streams
+ 376 PDF objects out of 1000 (max. 8388607)
+ 270 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
