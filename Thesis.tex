@@ -243,11 +243,11 @@ All the optical components in the SolsTi:S from M Squared are automated. The des
 \begin{figure}[h!]
 \centering
 \includegraphics[width=6in]{InsideTiS.pdf}
-\caption{The optical setup of the Ti:Sapphire laser. Light from the pump laser is coupled into the Ti:Sapphire at M2. The red trapezoid is the Ti:Sapphire crystal. The birefringent filter and the etalon both change the length of the optical cavity as does the piezo actuator attached to M3. The optical diode prevents the light from traveling the opposite direction in the cavity. After the Ti:Sapphire cavity the light is locked to the reference cavity before leaving the laser.}
+\caption{The optical setup of the Ti:Sapphire laser. Light from the pump laser is coupled into the Ti:Sapphire at M2. The red trapezoid is the Ti:Sapphire crystal. The birefringent filter and the etalon both change the length of the optical cavity as does the piezo actuator attached to M3. The optical diode prevents the light from traveling the opposite direction in the cavity. After the Ti:Sapphire cavity the light is locked to the reference cavity before leaving the laser.~\cite{Ti:S}}
 \label{InsideTiS}
 \end{figure}
 
-The laser light exits the ring cavity through the output coupler. This single mode light is then sent to the reference cavity. The reference cavity is a confocal Fabry Perot cavity.  Since there are no optical elements in this cavity, wavelengths that fit in integer multiples into resonator length constructively interfere and all other wavelengths interfere de-constructively. In the confocal configuration, the resonant condition is $L=n \lambda/4$ where $n$ is an integer. The purpose of this cavity is to further reduce the frequency width of the laser. Once the etalon is locked to a particular lazing mode, which is discussed below, the laser can be stabilized to the reference cavity. The resonance width of the reference cavity is less than 50kHz. Once locked to the reference cavity, that signal can be fed back to the etalon. This feedback signal can be used to correct the angle of the etalon further narrowing the frequency width of the laser to, at best, the resonance width of the reference cavity. After stabilization to the reference cavity, the frequency width of the Ti:S laser is approximately 50 kHz.
+The laser light exits the ring cavity through the output coupler. This single mode light is then sent to the reference cavity. The reference cavity is a confocal Fabry-Perot cavity.  Since there are no optical elements in this cavity, wavelengths that fit in integer multiples into resonator length constructively interfere and all other wavelengths interfere de-constructively. In the confocal configuration, the resonant condition is $L=n \lambda/4$ where $n$ is an integer. The purpose of this cavity is to further reduce the frequency width of the laser. Once the etalon is locked to a particular lazing mode, which is discussed below, the laser can be stabilized to the reference cavity. The resonance width of the reference cavity is less than 50kHz. Once locked to the reference cavity, that signal can be fed back to the etalon. This feedback signal can be used to correct the angle of the etalon further narrowing the frequency width of the laser to, at best, the resonance width of the reference cavity. After stabilization to the reference cavity, the frequency width of the Ti:S laser is approximately 50 kHz.
 
 Once both the etalon and reference cavity signals are stabilized, both the angle of the etalon and the length of the reference cavity can be changed simultaneously.  Moving the two optical elements together adjusts the wavelength of the laser such that it is still resonant with both the ring optical cavity and the reference cavity.  This is how the Ti:S laser frequency is scanned in a controlled manner. The scan range of this laser is approximately 25 GHz, limited by the distance to the neighboring resonance mode.  
 
@@ -311,12 +311,12 @@ To see the error signal on the oscilloscope select ``ECD error'' from the monito
 \label{ECDError}
 \end{figure}
 
-Once the doubler (ECD-X) has been locked the final step is locking the quadrupler (ECD-X-Q.) The process of locking the quadrupler is similar to the process of locking the doubler. The software required to control the quadrupler is a different package from the other sections of the laser, switch to the other control console on the laptop. Just like the doubler, the quadrupler is optimized by looking at PD 1 and PD 2 on the oscilloscope. They should be optimized by adjusting the beam alignment in the horizontal and vertical directions. The error signal is produced using the Hänsch-Couillaud technique, see above. The ECD-X-Q error can been seen on the oscilloscope and adjusted in the same manner as the ECD-X. It most cases the quadrupler will lock with more ease than the doubler. The locked and unlocked error signals can been seen in Figure~\ref{ECDQError}. The signal-to-noise ratio is comparable to that of the doubler at 20.
+Once the doubler (ECD-X) has been locked the final step is locking the quadrupler (ECD-X-Q.) The process of locking the quadrupler is similar to the process of locking the doubler. The software required to control the quadrupler is a different package from the other sections of the laser, switch to the other control console on the laptop. Just like the doubler, the quadrupler is optimized by looking at PD 1 and PD 2 on the oscilloscope. They should be optimized by adjusting the beam alignment in the horizontal and vertical directions. The error signal is produced using the Hänsch-Couillaud technique, see above. The ECD-X-Q error can been seen on the oscilloscope and adjusted in the same manner as the ECD-X. It most cases the quadrupler will lock with more ease than the doubler. The locked and unlocked error signals can been seen in Figure~\ref{ECDQError}. The signal-to-noise ratio is 9.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=6in]{ECDQError.pdf}
-\caption{The maroon line is the ECD-X-Q error signal before it is locked, which is difference between PD 1 and PD 2. After it has been locked, the error signal is the orange line. The signal to noise ratio is 20.}
+\caption{The maroon line is the ECD-X-Q error signal before it is locked, which is difference between PD 1 and PD 2. After it has been locked, the error signal is the orange line. The signal to noise ratio is 9.}
 \label{ECDQError}
 \end{figure}
 
@@ -324,13 +324,24 @@ The quadrupler lock is sensitive to vibration and likely to unlock. The referenc
 
 When turning off the laser all locks should be removed. Then the pump laser shutter should be closed, blocking all light into the Ti:Sapphire laser. Afterwards the pump laser can been cooled if the setup will not be used for an extended period.
 
-\section{Laser Stabilization}
+\section{Absolute Stabilization}
 
- Locking the Ti:Sapphire laser stabilizes the internal components of the laser to each other and keeps the laser operating on a single spacial mode. However, all of the components of the Ti:Sapphire are susceptible drift due to thermal or vibrational effects which can adjust the length of the resonance lengths of the Ti:Sapphire, the reference cavity, the doubler, and the quadrupler. Both the experiments using the Ti:Sapphire laser require precise, stable frequencies. Producing metastable krypton atoms using the Ti:Sapphire requires $215$ nm light whose wavelength does not fluctuate. Preforming precise beryllium spectroscopy means knowing the frequency of the laser very accurately. All of which means that Ti:Sapphire laser needs to be externally stabilized to a reference that will not fluctuate or drift.
+Locking the Ti:Sapphire laser stabilizes the internal components of the laser to each other and keeps the laser operating on a single spacial mode. However, all of the components of the Ti:Sapphire are susceptible drift due to thermal or vibrational effects which can adjust the length of the resonance lengths of the Ti:Sapphire, the reference cavity, the doubler, and the quadrupler. Both the experiments using the Ti:Sapphire laser require precise, stable frequencies. Producing metastable krypton atoms using the Ti:Sapphire requires $215$ nm light whose wavelength does not fluctuate. Preforming precise beryllium spectroscopy necessitates knowing the frequency of the laser very accurately. All of which means that Ti:Sapphire laser needs to be externally stabilized to a reference that will not fluctuate or drift.
 
 In the future, we will most likely stabilize the Ti:Sapphire laser to an iodine lock or an ultra low expansion (ULE) optical cavity. Currently we are planning to stabilize to a cesium or rubidium transition using sub-Doppler spectroscopy. The optical setup can be seen in Figure~\ref{SubDoppler}. Sub-Doppler spectroscopy is a rather ingenious application of the Doppler shift and multiple laser beams to produces a sharp, precise peak which can then be used for an on resonance, top-of-fringe, lock.
 
-The 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=6in]{SubDoppler.pdf}
+\caption{Image from ThorLabs.~\cite{SubDoppler}}
+\label{SubDoppler}
+\end{figure}
+
+Sub-Doppler begins with the laser passing through a half-wave plate to change the polarization of the light. Next the incoming laser beam is split using a polarizing beam splitter. The majority of the light is reflected around the rubidium cell, the light path at the bottom of Figure~\ref{SubDoppler}. The remaining light is passed through a fifty-fifty beam splitter, then both low power beams are passed through the rubidium cell. The uppermost low power beam in Figure~\ref{SubDoppler} will be used as a reference. The other low power beam, the beam in the center, passes left to right through the rubidium cell. The majority of the light, the high power beam, that was diverted around the rubidium cell is passed through the cell right to left in the center on top of the second low power beam. So the center beam in Figure~\ref{SubDoppler} is both a low power beam traveling left to right and a high power beam traveling right to left.
+
+Inside the rubidium cell, atoms obey the Maxwell velocity distribution \textcolor{blue}{is this true?}. Atoms traveling 
+
+The laser needs to be locked to the top of the fringe because that is the location which is known with precision. The difficulty with a top-of-fringe lock, different from a side lock, is that the intensity drops on both sides of the desired frequency and there is no way to tell which direction the frequency needs to be adjusted to match the peak frequency. To lock to the top of the fringe a lock-in method must be used. The lock-in output is the derivative of the input, so the input peak corresponds to an $x$ axis intercept on the output. The laser can easily be lock to the signal where it crosses zero.
 
 In short, the laser light frequency, which is currently stabilized to both the etalon and reference cavity, is scanned by changing the length of the reference cavity.  When the reference cavity length matches the frequency of a the desired Rubidium hyperfine transition, the error signal will be fed back to the reference cavity.  This "locks" the reference cavity length so that the light transmitted through the cavity matches the transition frequency of that Rubidium line.  As usual, the reference cavity error signal still feeds back to the etalon to keep the band width of the laser at $50$ kHz. 
 Setting up this stabilization was part of this thesis, but unfortunately the parts were back ordered.
@@ -374,7 +385,7 @@ Unfortunately the parts needed to produce $215$ nm were back ordered so we were 
 
 When we fully locked the Ti:Sapphire laser, the emitted beam was visibly diverging in the horizontal direction.  Even though we were wearing laser goggles, we can see the light diverging by letting the UV light hit a white card.  The white card fluoresces at many different wavelengths, some of which transmit through the goggles.   However, the above measurement suggested that our light was collimated, an obvious contradiction to our observations.  We realized that in addition to the $235$ nm light the laser also emitted $470$ nm light, a wavelength fully blocked by our laser goggles.  That blue light was interfering with our ability to measure the $235$ nm light.  We were measuring both wavelengths, not just the $235$ nm, and the blue light was close to collimated.
 
-To avoid measuring the blue light with the power meter, we measured the beam diameter at various $z$ locations directly using a ruler with white paper taped to it. This was a rougher measurement, much more susceptible to systematic error due to parallax when measuring the diameter. However it was a relatively simple measurement that we could preform quickly and see the results were usable. The results we obtained are in Figures~\ref{WaistFit}. We found that the beam waist was $45 \pm 4$ cm before the mirror used to define the origin along the $z$ axis and that waist was $6 \pm 0.2 \mu$m with a divergence angle of $0.71 \pm 0.02^\circ$.
+To avoid measuring the blue light with the power meter, we measured the beam diameter at various $z$ locations directly using a ruler with white paper taped to it. This was a rougher measurement, much more susceptible to systematic error due to parallax when measuring the diameter. However it was a relatively simple measurement that we could preform quickly and see the results were usable. The results we obtained are in Figures~\ref{WaistFit}. We found that the beam waist was $45 \pm 4$ cm before the mirror used to define the origin along the $z$ axis and that waist was $12.1 \pm 0.4 \mu$m with a divergence angle of $0.35 \pm 0.01^\circ$.
 
 \begin{figure}
 \centering
@@ -390,11 +401,14 @@ To avoid measuring the blue light with the power meter, we measured the beam dia
   \caption{The projection of the fit showing location of the beam waist.}
   \label{WaistFitL}
 \end{subfigure}
-\caption{The data from measuring the twice the effective beam waist with a fit using Equation~\ref{WaistDivergence}. The location of the beam waist is $-45 \pm 4$ cm, that is $45$ cm before the location defined as the origin. And the waist is $6 \pm 0.2 \mu$m with a divergence angle of $0.71 \pm 0.02^\circ$.}
+\caption{The data from measuring the twice the effective beam waist with a fit using Equation~\ref{WaistDivergence}. The location of the beam waist is $-45 \pm 4$ cm, that is $45$ cm before the location defined as the origin. And the waist is $12.1 \pm 0.4 \mu$m with a divergence angle of $0.35 \pm 0.01^\circ$.}
 \label{WaistFit}
 \end{figure}
 
-Based on these results, we decided to use a $200$ mm cylindrical lens which should give us a beam waist of $\approx 2$ mm along the horizontal axis. When we measured the light after installing the lens we got... 
+Based on these results, we decided to use a $200$ mm cylindrical lens which should give us a beam waist of $\approx 3$ mm along the horizontal axis. When we measured the light after installing the lens we got a beam waist of $3.5 \pm .8$ mm which agrees within uncertainty with our expected value for the beam waist. The laser was very close to collimated, our method of beam waist measurement was not precise enough to measure any divergence.
+
+
+\section{Conclusion}
 
 
 \section{Appendix}
@@ -449,6 +463,8 @@ Journal of Environmental Radioactivity 73 (2), 203e222 (2004)
 \bibitem{Ti:S} M Squared Lasers Ltd, ``SolsTiS - Narrow Lindwidth, Tunable CW Ti:Sapphire Laser User Manual'' v10.3
 
 \bibitem{ECDX} M Squared Lasers Ltd, ``ECD-X - Ultra-compact Frequency Doubling Accessory User Manual'' v1.8
+
+\bibitem{SubDoppler} ThorLabs, Saturated Absorption Spectroscopy Systems \url{<http://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=5616>}
 
 
 \end{thebibliography}
