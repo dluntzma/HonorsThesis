@@ -70,7 +70,7 @@ To improve the rate by which krypton atoms reach the metastable state and elimin
 \begin{figure}[h!]
 \centering
 \includegraphics[width=6in]{ExperimentSetup.pdf}
-\caption{\textcolor{blue}{should I use this because iodine lock versus rubidium lock}}
+\caption{The Ti:Sapphire laser emits $860$ nm light some of which is diverted to absolutely stabilize the using an iodine lock, an ultra low expansion optical cavity or a rubidium cell. The light is then passed through a doubler so the wavelength is $430$ nm and then another doubler so the wavelength is the required $215$ nm. The $215$ nm light is then coupled into an optical cavity within a vacuum chamber where the $215$ nm light is focused. The krypton atoms are directed through a capillary plate and through the optical cavity perpendicular to the $215$ nm light.}
 \label{ExperimentSetup}
 \end{figure}
 
@@ -243,7 +243,7 @@ All the optical components in the SolsTi:S from M Squared are automated. The des
 \begin{figure}[h!]
 \centering
 \includegraphics[width=6in]{InsideTiS.pdf}
-\caption{The optical setup of the Ti:Sapphire laser. Light from the pump laser is coupled into the Ti:Sapphire at M2. The red trapezoid is the Ti:Sapphire crystal. The birefringent filter and the etalon both change the length of the optical cavity as does the piezo actuator attached to M3. The optical diode prevents the light from traveling the opposite direction in the cavity. After the Ti:Sapphire cavity the light is locked to the reference cavity before leaving the laser.~\cite{Ti:S}}
+\caption{The optical setup of the Ti:Sapphire laser. Light from the pump laser is coupled into the Ti:Sapphire at M2. The red trapezoid is the Ti:Sapphire crystal. The birefringent filter and the etalon both change the length of the optical cavity as does the piezo actuator attached to M3. The optical diode prevents the light from traveling the opposite direction in the cavity. After the Ti:Sapphire cavity the light is locked to the reference cavity before leaving the laser. Image from Ti:Sapphire Manual.~\cite{Ti:S}}
 \label{InsideTiS}
 \end{figure}
 
@@ -333,18 +333,15 @@ In the future, we will most likely stabilize the Ti:Sapphire laser to an iodine 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=6in]{SubDoppler.pdf}
-\caption{Image from ThorLabs.~\cite{SubDoppler}}
+\caption{The optical setup for sub-Doppler spectroscopy. The incoming laser is split using a polarizing beam splitter. The majority of the light is diverted around the rubidium cell, bottom most beam, then passed through the cell in the opposite direction, the center beam. The rest of the light is split 50/50 and both beams are passed through the rubidium cell, top and center beams, and their intensity is measured by photodiodes on the right. Image from ThorLabs.~\cite{SubDoppler}}
 \label{SubDoppler}
 \end{figure}
 
-Sub-Doppler begins with the laser passing through a half-wave plate to change the polarization of the light. Next the incoming laser beam is split using a polarizing beam splitter. The majority of the light is reflected around the rubidium cell, the light path at the bottom of Figure~\ref{SubDoppler}. The remaining light is passed through a fifty-fifty beam splitter, then both low power beams are passed through the rubidium cell. The uppermost low power beam in Figure~\ref{SubDoppler} will be used as a reference. The other low power beam, the beam in the center, passes left to right through the rubidium cell. The majority of the light, the high power beam, that was diverted around the rubidium cell is passed through the cell right to left in the center on top of the second low power beam. So the center beam in Figure~\ref{SubDoppler} is both a low power beam traveling left to right and a high power beam traveling right to left.
+Sub-Doppler begins with the laser passing through a half-wave plate to change the polarization of the light. Next the incoming laser beam is split using a polarizing beam splitter. The majority of the light ($400 \mu$W) is reflected around the rubidium cell, the light path at the bottom of Figure~\ref{SubDoppler}. The remaining light ($4 \mu$W) is passed through a fifty-fifty beam splitter, then both $2 \mu$W beams are passed through the rubidium cell. The uppermost $2 \mu$W beam in Figure~\ref{SubDoppler} will be used as a reference. The other $2 \mu$W beam, the beam in the center, passes left to right through the rubidium cell. The majority of the light, the $400 \mu$W beam, that was diverted around the rubidium cell is passed through the cell right to left in the center on top of the second $2 \mu$W beam. So the center beam in Figure~\ref{SubDoppler} is both a $2 \mu$W beam traveling left to right and a $400 \mu$W beam traveling right to left. The intensity of each $2 \mu$W beam is measured by photodiodes after the rubidium cell on the right of Figure~\ref{SubDoppler}.
 
-Inside the rubidium cell, atoms obey the Maxwell velocity distribution \textcolor{blue}{is this true?}. Atoms traveling 
+The laser is scanned by changing the length of the reference cavity. When the length of the reference cavity matches the frequency of the atomic transition an error signal is created. The error signal arises because the rubidium atoms obey the Maxwell velocity distribution \textcolor{blue}{is this true?}. Atoms traveling to the left perceive the $2 \mu$W beam, which is moving left to right, at a higher frequency (blue shifted) so they are less likely to be excited than atoms that are not moving because to them the photon energy is not on resonance. But some of the photons are still excited lowering the number of atoms reaching the photodiode. Similarly, atoms traveling to the right experience a lower frequency of the laser (red shifted) and so less of them are excited. This is the standard Doppler effect. However, when atoms are not moving the laser photon energy should be on resonance and the most atoms excited, meaning the smallest intensity at the photodiode. But there is the $400 \mu$W beam traveling in the opposite direction. The higher intensity of the $400 \mu$W beam means that atoms that are not moving are more likely to be excited by photons from the $400 \mu$W beam than the $2 \mu$W beam because there are so many more of them. That means that instead of an intensity drop at the photodiode, there is a peak because the $400 \mu$W beam is exciting atoms so more photons from the lower power beam are reaching the photodiode. This create a curve characteristic of the Doppler effect, but with a sharp peak at the atomic transition frequency of rubidium. The reference signal, provided by the other $2 \mu$W beam, is just the Doppler shift, without the peak at the resonant frequency. It can be used to subtract the Doppler effect from the error signal leaving a single peak at the transition frequency of the rubidium.
 
-The laser needs to be locked to the top of the fringe because that is the location which is known with precision. The difficulty with a top-of-fringe lock, different from a side lock, is that the intensity drops on both sides of the desired frequency and there is no way to tell which direction the frequency needs to be adjusted to match the peak frequency. To lock to the top of the fringe a lock-in method must be used. The lock-in output is the derivative of the input, so the input peak corresponds to an $x$ axis intercept on the output. The laser can easily be lock to the signal where it crosses zero.
-
-In short, the laser light frequency, which is currently stabilized to both the etalon and reference cavity, is scanned by changing the length of the reference cavity.  When the reference cavity length matches the frequency of a the desired Rubidium hyperfine transition, the error signal will be fed back to the reference cavity.  This "locks" the reference cavity length so that the light transmitted through the cavity matches the transition frequency of that Rubidium line.  As usual, the reference cavity error signal still feeds back to the etalon to keep the band width of the laser at $50$ kHz. 
-Setting up this stabilization was part of this thesis, but unfortunately the parts were back ordered.
+The laser needs to be locked to the top of the peak because that is the location which is known with precision. The difficulty with a top-of-fringe lock, different from a side lock, is that the intensity drops on both sides of the desired frequency and there is no way to tell which direction the frequency needs to be adjusted to match the peak frequency. To lock to the top of the fringe a lock-in method must be used. The lock-in output is the derivative of the input, so the input peak corresponds to an $x$ axis intercept on the output. The laser can easily be lock to the signal where it crosses zero. This error signal will be fed back to the reference cavity to lock the reference cavity length so that the light transmitted through the cavity matches the transition frequency of that rubidium line. As previously mentioned, the reference cavity error signal feeds back to the etalon to keep the band width of the laser at $50$ kHz. Setting up this stabilization was originally part of this thesis, but unfortunately the parts were back ordered.
 
 \section{Laser Beam Intensity Profile}
 
@@ -411,6 +408,7 @@ Based on these results, we decided to use a $200$ mm cylindrical lens which shou
 \section{Conclusion}
 
 
+
 \section{Appendix A}
 
 \section{Appendix B}
@@ -418,7 +416,7 @@ Based on these results, we decided to use a $200$ mm cylindrical lens which shou
 \textcolor{magenta}{Put Mathematica notebooks here!}
 
 \singlespacing{
-\begin{thebibliography}{18}
+\begin{thebibliography}{23}
 
 \bibitem{UndergroundWater} N. C. Sturchio, X. Du, R. Purtschert, B. E. Lehmann, M. Sultan, L. J. Patterson, Z.-T. Lu, P. Mueller, K. Bailey, T. P. O'Connor, L. Young, R. Lorenzo, B. M. Kennedy, M. van Soest, Z. El Alfy, B. El Kaliouby, Y. Dawood, and A. M. A. Abdallah, ``One million year old groundwater in the Sahara revealed by krypton-81 and chlorine-36'', Geophysical Research Letters 31(5), L05503 (2004)
 
